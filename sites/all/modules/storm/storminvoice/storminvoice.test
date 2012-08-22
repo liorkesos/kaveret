@@ -1,0 +1,41 @@
+<?php
+class StorminvoiceTestCase extends DrupalWebTestCase {
+
+  public static function getInfo() {
+    return array(
+      'name' => t('Storm Invoice Functionality'),
+      'description' => t('Test the functionality of the Storm Invoice module'),
+      'group' => 'Storm',
+    );
+  }
+
+  public function setUp() {
+    parent::setUp('storm', 'stormattribute', 'stormorganization', 'stormproject', 'storminvoice');
+  }
+
+  public function testStorminvoiceCreate() {
+    // Create and login user
+    $user = $this->drupalCreateUser(array('Storm organization: add', 'Storm organization: view all', 'Storm invoice: add', 'Storm invoice: view all'));
+    $this->drupalLogin($user);
+  
+    // Create organization and invoice
+    $org = array(
+      'title' => $this->randomName(32),
+      'body' => $this->randomName(64),
+    );
+    $inv = array(
+      'title' => $this->randomName(32),
+      'organization_nid' => '1',
+      'items_0_description' => $this->randomName(32),
+      'items_0_amount' => '.28',
+      'items_0_tax1app' => '1',
+      'items_0_tax1percent' => '5',
+      'items_0_tax2app' => '2',
+      'items_0_tax2percent' => '7.5',
+    );
+    $this->drupalPost('node/add/stormorganization', $org, t('Save'));
+    $this->drupalPost('node/add/storminvoice', $inv, t('Save'));
+
+    $this->assertText(t('Invoice @title has been created.', array('@title' => $inv['title'])));;
+  }
+}

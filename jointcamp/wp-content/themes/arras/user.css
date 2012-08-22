@@ -1,0 +1,61 @@
+/* This CSS file is created for you to create or override any of the existing CSS styles used in this theme */
+
+#nav .sf-menu a
+{
+ display: block;
+ text-decoration: none;
+ padding: 16px 12px 11px;
+ color: #fdfdfd;
+ font-size: 12px;
+ font-weight: bold;
+}
+
+#text-10 
+{
+ float : right ; 
+}
+ul#news-ticker 
+{
+ list-style-type : none;
+}
+.tickerLink a
+{
+ font-weight: bold;
+ font-size: 14px; 
+}
+.widgettitle
+{
+ background: #333;
+}
+a, a:link, a:visited {
+ color: #3399ff;
+ text-decoration: none;
+}
+a:hover {
+ color: #000000;
+}
+.multi-sidebar .tabs li {
+ background: #333;
+ border: 1px solid #CCC;
+}
+.quick-nav #youtube { background: url('http://youtubeonlinevideoconverter.com/images/youtube.png') no-repeat; }
+
+li#menu-item-3215 a { color: #FFFF00 !important;}
+li#menu-item-3216 a { color: #FFFF00 !important;}
+
+.posts-default .entry-comments {
+    display: none;
+}
+
+.posts-default .published {
+    display: none;
+}
+.posts-default .entry-meta {
+ display: none; 
+ }
+ .page .about-author { display: none !important; }
+ 
+/* Fix the transparent sub-menu look with fixed color */
+#nav .sf-menu ul li, #nav .sf-menu ul li:hover {
+background: #474747;
+}

@@ -1,0 +1,15 @@
+;$id$
+name = Booktree
+description = A tree representation of one or more books.
+package = Other
+core = 6.x
+package = Views
+dependencies[] = book
+
+
+; Information added by drupal.org packaging script on 2009-11-09
+version = "6.x-1.5"
+core = "6.x"
+project = "booktree"
+datestamp = "1257793228"
+

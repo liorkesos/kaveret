@@ -1,0 +1,20 @@
+/*$Id*/
+.decisions_selection_1click {
+  text-align: center;
+  font-weight: bold;
+}
+
+a.decisions_selection_vote {
+  margin: 0px 8px 0px 8px
+}
+
+.decisions_selection_voting span.error {
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.decisions_spinner {
+  background: #EEF3F7 url('../modes/spinner.gif') no-repeat center 50%;
+  min-height: 100px;
+}

@@ -1,0 +1,50 @@
+<?php
+class StormtimetrackingTestCase extends DrupalWebTestCase {
+
+  public static function getInfo() {
+    return array(
+      'name' => t('Storm Timetracking Functionality'),
+      'description' => t('Test the functionality of the Storm Timetracking module'),
+      'group' => 'Storm',
+    );
+  }
+
+  public function setUp() {
+    parent::setUp('storm', 'stormattribute', 'stormorganization', 'stormproject', 'stormtask', 'stormticket', 'stormtimetracking');
+  }
+
+  public function testStormtimetrackingCreate() {
+    // Create and login user
+    $user = $this->drupalCreateUser(array('Storm organization: add', 'Storm organization: view all', 'Storm project: add', 'Storm project: view all', 'Storm task: add', 'Storm task: view all', 'Storm ticket: add', 'Storm ticket: view all', 'Storm timetracking: add', 'Storm timetracking: view all'));
+    $this->drupalLogin($user);
+
+    // Create organization and invoice
+    $org = array(
+      'title' => $this->randomName(32),
+      'body' => $this->randomName(64),
+    );
+    $prj = array(
+      'title' => $this->randomName(32),
+      'organization_nid' => '1',
+    );
+    $task = array(
+      'title' => $this->randomName(32),
+      'body' => $this->randomName(64),
+    );
+    $ticket = array(
+      'title' => $this->randomName(32),
+      'body' => $this->randomName(64),
+    );
+    $timetracking = array(
+      'title' => $this->randomName(32),
+      'body' => $this->randomName(64),
+    );
+    $this->drupalPost('node/add/stormorganization', $org, t('Save'));
+    $this->drupalPost('node/add/stormproject', $prj, t('Save'));
+    $this->drupalPost('node/add/stormtask', $task, t('Save'));
+    $this->drupalPost('node/add/stormticket', $ticket, t('Save'));
+    $this->drupalPost('node/add/stormtimetracking', $timetracking, t('Save'));
+
+    $this->assertText(t('Timetracking @title has been created.', array('@title' => $timetracking['title'])));;
+  }
+}

@@ -1,0 +1,389 @@
+/* $Id: fusion-starter-style-rtl.css 6571 2010-02-25 01:22:28Z chris $ */
+
+/* font styles for hebrew. Changes:
+1) readable & standard serif fonts for titles (not times new roman!)
+2) give priority to arial (much more readable than tahoma)
+(shahar, 29/01/2012)  */
+
+.block-locale ul {
+    list-style-type: none;
+}
+
+/* this stupid thing overides a stupid civicrm settings that accidentally affects the profile, 
+shahar, march  2012 */
+.profile #crm-container .crm-section .label {
+	width: 30%;
+}
+
+/* shahar - RTL fixes, 2012-02-28 */
+#crm-container .crm-section .label, .crm-section .label {
+	float: right;
+}
+.profile .column-right {
+	float: right;
+}
+
+/* shahar: push the logo a bit from the margins  2012-03-14 */
+.top-menu li {
+	margin-right: 1em;
+}
+
+/* shahar, 2012-02-28 - vertical tabs bugs */
+.vertical-tabs-list {
+    float: left;
+    width: 28%;
+    display: inline;
+}
+.vertical-tabs-panes {
+    float: left;
+    width: 72%;
+}
+
+/* shahar - left to right */
+.views-exposed-widget-group-search { 
+	float: right; 
+	display: block;
+	margin: 0 0 0.1em 0;
+}
+.views-exposed-widgets-group-search { float: right; margin: 1px 0 2px 0; }
+
+
+/* shahar */
+.views-admin-links {
+	left: 0;
+	right: initial;
+	right: auto;
+}
+
+
+h1, h2, h3, h4,
+#site-name,
+.primary-menu-inner ul.sf-menu a,
+.primary-menu-inner ul.sf-menu a:visited,
+#block-commons_core-3 .content,
+#block-boxes-homepage_info_box a.intro-morebutton, 
+#block-boxes-homepage_info_box .intro-textblock h3
+{
+	font-family: Hadassah, David, Narkisim, serif;
+}
+
+.shoutbox-msg .shoutbox-post-info span.shoutbox-msg-time,
+.calendar-calendar .week-view td,
+.calendar-calendar .day-view td,
+.block .calendar-calendar .month-view table tr td,
+#autocomplete ul li,
+#block-boxes-homepage_info_box p,
+.view-user-directory .views-field-name,
+.search-box-inner input[type=submit]
+{
+	font-family: Arial, Tahoma, Verdana, sans-serif;
+}
+
+
+
+/* --- shahar, header fix additions: 2012-02-18 --- */
+.view-user-meta {  float: left; }
+.header-site-info { position: absolute; }
+
+/* shahar - smaller admin menu, so it fits in small screens */
+ul.menu li {
+    line-height: 100%;
+}
+
+
+
+/* Tab Menus
+/-------------------------------------------------------------- */
+#content-tabs {
+ /* float: right;*/
+}
+
+#content-tabs ul.primary,
+#content-tabs ul.secondary {
+  float: right;
+}
+
+#content-tabs ul.primary li,
+#content-tabs ul.secondary li {
+  float: right;
+}
+
+#content-tabs ul.primary li a:link,
+#content-tabs ul.primary li a:visited,
+#content-tabs ul.secondary li a:link,
+#content-tabs ul.secondary li a:visited {
+  float: right;
+}
+
+/* RTL content styles */
+.inner fieldset {
+	float: right;
+}
+
+/* disabled by shahar, due to collision with ckeditor: 
+please be more specific! 
+.inner table {
+	float: right;
+}
+*/
+
+
+
+#edit-language-wrapper, #edit-to-wrapper, #edit-translation-wrapper {
+    float:none;
+}
+
+.search-box {
+    float:left;
+}
+.primary-menu {
+    float:right;
+}
+
+.header-site-info {
+    float:right;
+}
+.header-region {
+    float:left;
+}
+#logo {
+    float:right;
+    margin-left:10px;
+}
+
+/* shahar: these defs has bullets, instead of in the containing <LI>, for some reason. maybe for books? */
+.node .inner ul.menu li a, 
+.block .content ul.menu li a, 
+.panel-pane .inner ul.menu li aa {
+	background-image: none;
+}
+
+.book-navigation li {
+	background-color: transparent;
+	background-image: url(/sites/all/themes/beehive_origins/images/book-page-bullet.png) no-repeat 0 4px;
+	background-position: top right;
+}
+.book-navigation li ul {
+	background-color: transparent;
+	background-image: url(/sites/all/themes/beehive_origins/images/book-icon.png) no-repeat 0 4px;
+	background-position: top right;
+}
+
+.item-list ul li, .node .inner ul li, .panel-pane .inner ul li, .block .content ul li {
+	/* officially this is now a bug. shahar, 25/3/2012 
+		background: transparent url(/sites/all/themes/beehive_origins/images/gray-arrow-left.png) no-repeat 0 4px;
+		list-style: none;
+		padding-right: 22px !important;
+		text-indent: 0;
+		background-position: top right;
+	*/
+margin-bottom: 8px;
+}
+.item-list ul li {
+	padding-right: 0 !important;
+}
+
+/* shahar - list bullets in content area.
+            anything outside content breaks elements that stupidly use ul/li for 
+            something other than bulleted lists  */
+#content-content ul li {
+	padding-right: 2em;
+}
+*/
+
+/* shahar - eliminate bullets in lists in page elemetns, at least in hebrew */
+.content li.pager-item {
+	background-image: none;
+}
+
+.content ul.pager li {
+background-image: none;
+line-height: 1.8em;
+margin: 0;
+padding: 0;
+text-indent: 0;
+-moz-border-radius: 5px;
+-o-border-radius: 5px;
+-webkit-border-radius: 5px;
+border-radius: 5px;
+	/* shahar - workaround; background-color: orange; */
+}
+
+.content ul.pager li.first {
+background-color: transparent;
+}
+
+.views-row-first {
+	clear: both;
+}
+
+.view-groups-main-listing .view-content .views-field-field-group-image-fid, .view-subgroups-main-listing .view-content .views-field-field-group-image-fid {
+float: right;
+width: 68px;
+margin-left: 10px;
+margin-right: 0;
+}
+#view-id-subgroups_main_listing-page_1 .views-row .views-field-field-group-image-fid, #view-id-groups_my_groups_listing-page_1 .views-row .views-field-field-group-image-fid {
+float: right;
+}
+.views-field-picture {
+float: right !important;
+margin: 0 0 10px 10px !important;
+}
+
+.activity-log-picture {
+float: right;
+margin-left: 10px;
+margin-right: 0;
+width: 30px;
+}
+
+/*.sidebar-last .block-views .views-field-field-group-image-fid ~ *, .sidebar-last .block-views .views-field-picture ~ *, .sidebar-last .block-views .views-field-field-date-value ~ * {
+margin-right: 40px;
+}*/
+
+.sidebar-last .block-views .views-field-field-group-image-fid, .sidebar-last .block-views .views-field-picture, .sidebar-last .block-views .views-field-field-date-value {
+float: right;
+margin-left: 10px;
+marging-right: 0;
+width: 30px;
+}
+
+.block ul, .block ol {
+margin-right: 0;
+margin-left: 2em;
+}
+
+.views-exposed-form .views-exposed-widget {
+display: block;
+float: right;
+margin-left: 4%;
+padding: 0;
+margin-right: 0;
+}
+.views-exposed-widgets {
+float: right;
+margin: 2px 8px 8px 0px;
+max-width: 82%;
+width: auto;
+}
+
+/* blog editor section start */
+.inner fieldset {
+/*this float:right caused a display bug in Hebrew blog edit (/he/node/add/blog)*/
+/*float: right;removed*/
+/*making sure it doesn't float from somewhere else*/
+float: none;
+}
+
+.tagging-curtags-wrapper label {
+    background: url("/profiles/drupal_commons/modules/contrib/tagging/tag.png") no-repeat scroll right center transparent;
+    display: block;
+    margin-right: 5px;
+    padding: 0 20px 4px 0;
+}
+div.vertical-tabs {
+margin: 1em 0 1em 0;
+}
+div.vertical-tabs ul.vertical-tabs-list {
+ float: right;
+ margin: -1px 0 -1px 0 !important;
+}
+#tagging-widget-container .tagging-widget-input {
+    float: right;
+}
+#tagging-widget-container .field-suffix {
+    float: right;
+}
+.node-form #tagging-widget-container .description {
+    float: right;
+}
+div.vertical-tabs ul.vertical-tabs-list li.selected {
+	border-left-width: 0;
+}
+/* ordered list margin hack */
+.content ol {
+    margin-left: 0;
+    margin-right: 2em;
+}
+
+/* blog editor section end */
+.views-exposed-wrapper .views-exposed-widget.views-exposed-submit .form-submit {
+margin-top: 0;
+max-width: 100%;
+width: 60px;
+}
+.views-exposed-wrapper .views-exposed-widget.views-exposed-submit {
+float: right;
+margin-right: 8px;
+max-width: 14%;
+width: auto;
+clear: both;
+margin-bottom: 4px;
+}
+.view-user-directory .views-field-name {
+clear:both;
+}
+/* commons facebook module styles */
+.facebook-status-media > .user-picture {
+float: right;
+margin-right: 0;
+margin-left: 10px;
+}
+
+
+/* shahar: fix admin links not to hide useful controls... */
+div.view div.views-admin-links ul.links li {
+	float: left;
+}
+
+.content ul.pager li {
+	padding: 0 1em !important;
+}
+
+
+/* shahar: dates shown broken */
+.views-field-created .field-content {
+	unicode-bidi: embed;
+}
+
+
+
+
+
+
+
+/* book styles 
+
+
+.booktree .tree-level-1,
+.booktree .tree-level-2,
+.booktree .tree-level-3 { 
+	list-style-image: url(/sites/all/themes/beehive_origins/images/book-page-rtl.gif);
+	list-style-type: none;
+	list-style-position: inside;
+}
+.booktree .tree-level-1 { 
+	font-size: 170%;
+	border-top: 3px solid orange;
+}
+.booktree .tree-level-2 { 
+	font-size: 145%;
+	border-top: 1px solid orange;
+}
+.booktree .tree-level-3 { 
+	font-size: 120%;
+	border-top: 1px dotted orange;
+
+}
+*/
+
+
+.booktree ul { 
+	margin-right: 1.6em !important; /*for rtl */
+	margin-left: 1.6em !important;  /*for ltr */
+}
+.booktree li {
+	padding: 0 !important;
+	margin: 0 !important;
+}

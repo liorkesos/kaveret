@@ -1,0 +1,1045 @@
+.top-menu {
+	background: #E6E6F0;
+	height:42px;
+	width:100%;
+	margin-bottom:0;
+	/*#A2A2C4;*/
+}
+
+.top-menu ul{
+	height:59px;
+	list-style: none;
+	width:100%;
+	color: #393B6C;
+}
+
+.top-menu li {
+	height:100%;
+	display: block;
+	list-style: none;
+    float:right;
+    background-position: right center;
+    padding: 0 9px 0 9px;
+    line-height: 1em;
+}
+
+/*.primary-menu li {
+	width:65px;
+	text-align:center;
+}
+
+.primary-menu ul li ul {
+	width:500px;
+	height:20px;
+	position: absolute;
+	right:-130px !important;
+	background-color: transparent;
+}
+
+.primary-menu ul .last ul {
+	width:500px;
+	height:20px;
+	position: absolute;
+	right:-160px !important;
+	background-color: transparent;
+}*/
+
+.top-menu li a {
+	margin: 0px;
+	display: block; 
+	width: 100%; 
+	height: 100%;
+	padding: 15px 0 0 0 !important;
+	height: 44px;
+	font-family: Arial, Helvetica,sans-serif !important; 
+	color: #393B6C;
+	font-size: 14px;
+	font-weight:normal;
+}
+
+.top-menu li a:hover {
+	text-decoration:none;
+}
+
+/*.primary-menu li a {
+}
+
+.primary-menu .last{
+	margin-right: -15px;
+}
+
+.primary-menu ul li ul li{
+	width:auto;
+	height:20px;
+	text-align: center;
+	margin-right: 0;
+}
+
+.primary-menu ul ul .last {
+	margin-right:0;
+}
+
+.primary-menu ul li ul li a{
+	width:auto;
+	height:15px;
+	text-align: center;
+	padding: 5px 10px 0 10px !important;
+	font-size: 10px;
+
+}
+
+
+.expanded .menu li .first{
+	margin-top:15px;
+	
+}
+*/
+
+.top-menu-user-block{
+	float:left;
+	margin-top:2px;
+}
+
+.top-menu-menu-block {
+	position: absolute;
+	right: 50%;
+	margin-right: -280px;
+	height:42px;
+}
+
+.top-menu-name {
+	background: transparent url(../images/top_15.png) no-repeat;
+	width:150px;
+    text-indent:-9999px;
+    text-decoration:none;
+
+}
+
+.top-menu-user-block .top-menu-logo {
+	background: transparent url(../images/top_04.jpg) no-repeat 0 -18px ;
+	width: 45px;  /* was too wide! shahar */
+    text-indent:-9999px;
+    text-decoration:none;
+    height:30px;
+}
+
+.top-menu-search {
+    text-indent: 0px;
+    width: 195px;  /* shahar: was too wide, and pushed the other elements off the banner */
+    padding-left: 0px;
+}
+
+.top-menu-welcome {
+	text-indent: 0px !important;
+	width:65px !important;
+	color:#2D2F7A !important;
+	padding-right:20px;
+	margin-top:-5px;
+}
+
+.top-menu-welcome span{
+	text-indent: 0px ;
+	width:65px;
+	color:#2D2F7A;
+	position: relative;
+	top:10px;
+	margin-left:5px;
+}
+
+.top-menu-picture {
+    text-indent: 0px;
+    width:63px;
+    padding:none;
+    margin:none; 
+    float:left; 
+}
+
+.top-menu-picture img {
+	margin-top:5px;
+	margin-right:0px;
+}
+ 
+.top-menu-login a {
+	font-weight: bold;
+}
+#edit-search-theme-form-1 {
+	border-color: #2D2F7A;
+	border-style: solid;
+	border-width: 2px;
+	width:150px;
+	height:14px;
+	position: relative;
+	background: white;
+}
+ 
+#search .form-submit {
+border:0px; /*important*/
+background-color:transparent; /*important*/
+position: absolute;
+top:2px;
+right:2px;
+
+}
+
+#search form {
+	display: inline;
+}
+#search {
+	margin-top:12px;
+	position: relative;
+}
+
+#top-menu {
+	margin-right:0px;
+	margin-left:0px;
+}
+
+.contextual-search-wrapper {
+	display:none;
+}
+
+#main-wrapper {
+	
+}
+
+#header-group {
+	border-radius: 0;
+	height: 53px;
+	z-index: 1;
+	width: 960px;
+	overflow:hidden;
+	margin-bottom:0;
+	box-shadow:none;
+	max-width:none;
+	width:100%;
+	border-bottom: 1px solid #B8B4C3;
+}
+
+#header-group-inner {
+	height:42px;
+	border-top:11px solid #F89E14;
+}
+#block-menu-primary-links a{
+	color:#49498C;
+	font-size:13px;
+	padding: 10px 0px 0px 0px !important;
+	margin:0;
+	text-decoration:none;
+	font-weight: normal;
+	display: block;
+	height:24px;
+	width:100%;
+	margin-top:-10px;
+}
+
+#block-menu-primary-links a:hover{
+	font-weight:bold;
+}
+
+#block-menu-primary-links li ul a{
+	padding: 5px 0px 0px 0px !important;
+}
+
+#block-menu-primary-links li ul {
+	display: none;
+}
+
+#block-menu-primary-links .content {
+	padding: 0;
+}
+
+#block-menu-primary-links .menu {
+	padding-left:0;
+}
+#block-menu-primary-links .expanded, #block-menu-primary-links .collapsed {
+	width:90px;
+	padding: 10px 0 !important;
+	text-align: center;
+	vertical-align: middle;
+	height:14px;
+	background-color: rgba(241, 241, 241, 0.8);
+      
+}
+ #block-menu-primary-links li.collapsed {
+   list-style: none;
+ }
+ 
+#block-menu-primary-links .expanded:hover ul {
+	display: block;
+
+}
+
+#block-menu-primary-links .expanded ul {
+	margin-top:10px;
+	margin-right:0;
+	text-align:center;
+	background-color: #F2F2F7;
+}
+
+/*#block-menu-primary-links .fusion-edit {
+	display: none;
+}*/
+#block-menu-primary-links .first ul {
+	/*background: transparent url(../images/kaveret_space_menu.png) no-repeat 0 0;*/
+}
+
+#block-menu-primary-links .last ul {
+	/*background: transparent url(../images/personal_space_menu.png) no-repeat 0 0;*/
+}
+
+#block-menu-primary-links .inner {
+	margin:0;
+	border-radius:0;
+	border:0;
+}
+
+#block-menu-primary-links li ul li{
+	width:100%;
+	height:23px;
+	text-align: center;
+	font-weight:normal;
+	padding:0px 0px 0px 0px !important;
+	border: none !important;
+	list-style:none;
+}
+
+#block-menu-primary-links .expanded li:hover{
+}
+
+#block-menu-primary-links .expanded.first , #block-menu-primary-links .collapsed.first{
+	/*background: transparent url(../images/kaveret_space_off.png) no-repeat -2px 0;*/
+	border-bottom: 1px solid #B8B4C3;
+	border-left: none;
+	border-right: 1px solid #B8B4C3;
+	font-weight:normal !important;
+	color:#ACC990;
+	position: absolute;
+	right:0;
+}
+
+#block-menu-primary-links .expanded.first:hover {
+	/*background: transparent url(../images/kaveret_space_on.png) no-repeat -2px 0;*/
+	/*border-left: 1px solid #B8B4C3;*/
+}
+
+#block-menu-primary-links .expanded.last , #block-menu-primary-links .collapsed.last{
+	/*background: transparent url(../images/personal_space_off.png) no-repeat -3px 1px;*/
+	border-right: 1px solid #B8B4C3;
+}
+
+#block-menu-primary-links .expanded.last:hover {
+	/*background: transparent url(../images/personal_space_on.png) no-repeat -3px 1px;*/
+}
+
+#block-menu-primary-links .expanded:hover  {
+	border-top: 0;
+	border-radius: 0;
+	font-weight:bold;
+
+}
+#block-menu-primary-links .expanded.first:hover {
+}
+
+#block-menu-primary-links .expanded.last, #block-menu-primary-links .collapsed.last{
+	font-weight:bold;
+	position: absolute;
+	left:0;
+	border-left:none;
+	border-bottom:1px solid #B8B4C3;
+	width:90px;
+
+}
+
+#main-inner {
+	padding-top:0;
+	padding-bottom:0;
+	border-bottom:1px solid #B8B4C3;
+}
+
+#main-group {
+	margin-right: 0px;
+	border-right: 1px solid #B8B4C3;
+}
+
+#main {
+	background-color: white;
+	box-shadow:none;
+	border-radius:none;
+}
+
+#main-group	{
+	background-color: white;
+}
+
+#block-menu-primary-links .expanded .menu {
+	width:88px;
+	padding-left:0 !important;
+	margin-left: 5px;
+	margin-right:-1px;
+	border-right:1px solid #B8B4C3;
+	border-bottom:1px solid #B8B4C3;
+	border-left:none;
+}
+
+#block-menu-primary-links .expanded.first .menu {
+	border-left:1px solid #B8B4C3;
+}
+
+.i18n-he #block-menu-primary-links .expanded .menu {
+	margin-right:-1px;
+}
+
+#block-views-my_recent_items-block_1 {
+	margin-top: 50px;
+}
+
+#block-menu-primary-links {
+	position: relative;
+	height:28px;
+	overflow: visible;
+	z-index:10;
+	margin-bottom: 0px;
+}
+
+#block-menu-primary-links:before {
+	display:none;
+}
+
+.sidebar-last .block .inner {
+	margin:0;
+}
+
+/*Home page views menu*/
+#block-menu-menu-homepageviews {width:100%;}
+#block-menu-menu-homepageviews .inner {margin:0;}
+#block-menu-menu-homepageviews ul {list-style:none; margin:0; padding:0; margin-top:-3px;}
+#block-menu-menu-homepageviews li {
+	float:right;
+	width:198px;
+	height: 24px;
+	padding-top: 12px;
+	padding-right: 0px !important;
+	text-align:center;
+	font-size: 13px;
+	font-weight: bold;
+	border-left:2px solid #BCBCD3;
+	border-bottom:2px solid #BCBCD3;
+	background-color: #F4F3F5;
+	border-top: none;
+}
+#block-menu-menu-homepageviews li:hover {background-color: #FEF3D5;}
+#block-menu-menu-homepageviews li.last {border-left:0; }
+#block-menu-menu-homepageviews li.active-trail {border-bottom:0; background:none;}
+#block-menu-menu-homepageviews a {background:none; padding:0; margin:0;color:#7A79A9; text-decoration:none; display: block; width:100%; height:100%;} 
+#block-menu-menu-homepageviews a.active{font-weight:bold;}
+#block-menu-menu-homepageviews .active-trail a {color:#4D4D8E;}
+
+.sidebar-last .block .inner {
+	border: 0;
+	border-radius: 0;
+}
+
+.sidebar-last {
+	width:178px;
+}
+.grid16-13 {
+	width: 778px;
+}
+
+.grid16-10 {
+	width:598px;
+}
+
+.homepagefeed a{
+	background:none;
+	
+}
+#content-content .homepagefeed li {
+	background:none;
+	position: relative;
+}
+
+#content-region {
+	border-top:none;
+	/* disabled by shahar -- colliding with ckeditor:
+	why do we need this? be more specific!
+	padding: 10px;
+	*/
+}
+
+.homepagefeed a {
+	padding-right:0 !important;
+	text-decoration:none;
+	color:#404086;
+}
+.homepagefeed .views-field-picture , .homepagefeed .views-field-field-group-image-fid{
+	padding-left: 30px;
+}
+.homepagefeed .views-field-field-group-image-fid {
+	float:right;
+}
+
+.homepagefeed .views-field-field-group-image-fid img{
+	height:60px;
+	width:60px;
+}
+
+.homepagefeed .pager a{
+	padding: 3px !important;
+}
+
+.homepagefeed .pager .pager-current {
+	color: black;
+	background: #69C;
+	padding: 2px !important;
+}
+
+/*.homepagefeed .views-field-subscribe em {
+	background: #69C;
+	border: 1px solid #228BC8;
+	color: white;
+	display: block;
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 22px;
+	margin: 2px;
+	padding: 1px 5px 2px;
+	text-transform: uppercase;
+}
+*/
+.homepagefeed .views-field-subscribe, .homepagefeed .views-field-leave-group  {
+	float:left;
+	background-color: transparent;
+}
+
+.homepagefeed .views-field-description {
+	width:60%;
+	float:right;
+}
+
+.homepagefeed .views-field-subscribe, .homepagefeed .views-field-leave-group {
+	position: absolute;
+	left: 7px;
+	top: 50%;
+	margin-top: -22px;
+}
+.homepagefeed .views-field-title a {
+	color:black;
+}
+
+.homepagefeed .views-field-name a:hover {
+	color:blue;
+}
+.homepagefeed .views-field-title{
+	margin-top:10px;
+}
+
+.homepagefeed .views-field-title a:hover{
+	color:blue;
+}
+.homepagefeed .views-field-name{
+	float:none;
+}
+
+.homepagefeed .views-field-title a{
+	float:none;
+	font-size:150%;
+	color:#404086;
+}
+.homepagefeed .views-field-last-updated{
+	float:left;
+	color: #F9AD56;
+}
+
+.homepagefeed .views-field-comments-link{
+	margin-top:10px;
+	margin-bottom:10px;
+}
+
+.homepagefeed .views-field-comments-link a{
+	background: transparent url(../images/bullet.png) no-repeat 100% 5px;
+	padding-right:15px !important;
+}
+
+.homepagefeed .views-field-comments-link a:hover {
+	color:blue;
+}
+#block-facebook_status-facebook_status {
+	width:100%;
+}
+
+.facebook-status-textarea-wrapper {
+	border: 0;
+}
+
+#edit-fbss-status {
+	height:20px;
+}
+
+#facebook-status-replace input{
+	background: none;
+	padding:0;
+	margin:0;
+	color:#404086;
+	border:none;
+	margin-right:20px;
+	margin-top:10px;
+}
+
+.fbsmp-icon-list {
+	border:none;
+}
+
+#edit-fbss-submit,
+.facebook-status-submit {
+	float: right;
+	background: url('../images/share_button.png') no-repeat 0 0 transparent !important;
+	border: 0 none;
+	color: transparent !important;
+	width: 52px;
+	height: 20px;
+}
+
+#facebook-status-replace .fbsmp-icon-list input{
+	padding-right: 25px !important;
+	background-position: 100% 0;
+	background-repeat: no-repeat;
+	height: 19px;
+}
+
+.fbsmp-video-icon {
+	display:none;
+}
+
+#content-group {
+	border-left: solid 1px #BCBCD3;
+}
+
+#block-menu-primary-links {
+	position:relative;
+}
+
+
+
+#block-locale-0 {
+	display:none !important;
+}
+
+#sidebar-last {
+	width:176px;
+}
+
+#footer-inner {
+	padding-bottom:23px;
+}
+
+div.vertical-tabs ul.vertical-tabs-list {
+	position:absolute;
+	
+}
+
+.vertical-tabs-pane {
+	width:370px;
+}
+
+#sidebar-first {
+	background: none repeat scroll 0 0 white;
+}
+
+#sidebar-first-inner .inner {
+	border: none;
+}
+
+ul.booktree {
+	padding-right:15px;
+}
+
+.sidebar-first .sidebar-first-inner .inner {
+	margin:0px;
+}
+
+#search-theme-form input:focus {
+	outline: none;
+}
+
+.views-field-subscribe a, .views-field-leave-group a, .views-field-subscribe em, .views-field-leave em{
+  	background:#E6E6EF;
+  	color:#3E3E85;
+  	border-color:#3E3E85;
+}
+
+td.views-field-subscribe {
+	float:none;
+
+}
+
+td.views-field-members-count, td.views-field-posts-count, th.views-field-members-count, th.views-field-posts-count{
+	display: table-cell;
+	font-size:12px;
+	text-align:center;
+}
+
+.social-links {
+
+}
+
+/*  implemented a better separator, shahar
+.sidebar-first div.block:before{
+	width:100%;
+	height:11px;
+	content:'';
+	display: block;
+	background: transparent url(../images/separator.png) no-repeat 0 0;
+	z-index:100;
+}
+*/
+
+.sidebar-first-inner #block-block-7:before {
+	display: none
+}
+
+#block-block-7 {
+	margin-top: -20px;
+	margin-bottom: -20px;
+}
+
+#block-block-6 {
+	position: absolute;
+	bottom:0;
+}
+
+.ui-widget-overlay {
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.3);
+	top:0;
+}
+
+.ui-dialog-content .inner{
+	border:2px solid #393B6C;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#header-top { 
+    height: 42px; 
+    max-width: initial;
+    max-width: inherit;
+    width: 960px;
+	overflow: visible;
+}
+
+#search-block-form {
+	margin-top: 0.7em;
+}
+
+#nice-menu-2 {
+	margin-top: 0.5em;
+}
+
+
+#nice-menu-2 > li {
+	font-weight: bold;
+}
+
+ul.nice-menu-down li.menuparent:hover,
+ul.nice-menu-down li.menuparent {
+	background-position: right center;
+}
+
+#header-top-inner {
+	margin-bottom: -6px;  /* stupid margin between header and page... why?! */
+}
+
+#nice-menu-2 > ul {
+	background-color: #E6E6F0;
+border: 2px dotted blue;
+/*
+	border-top-width: 0;
+	border-top-style: none;
+	border-top-color: transparent;
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: navy;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: navy;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: navy;
+*/
+	margin-top: 13px;
+}
+
+#header-top .nice-menu a:hover {
+/*	text-shadow: 2px 3px 4px gray;*/
+text-decoration: none;
+}
+
+#nice-menu-2 > li {
+	padding: 0 1em;
+	height: 2em;
+}
+
+#nice-menu-2 ul,
+#nice-menu-2 li {
+	background-color: #E6E6F0;
+}
+#nice-menu-2 ul {
+	margin-top: 14px;
+	border: 1px #B8B4C3 solid;
+}
+#nice-menu-2 ul.nice-menu-down li { border: 0 none; }
+
+/* social network block */
+#block-block-6 {
+	/*
+	shahar -- moved to header-top
+	position: absolute;
+	bottom:0;
+	*/
+	display: block;
+	float: right;
+	position: initial;
+	width: 180px;
+}
+
+
+
+#block-search-0 {
+	float: right;
+	display: block;
+	width: 16em;
+}
+
+#edit-search-block-form-1 {
+	background: white url(../images/inner-search-shadow.png) no-repeat 0 0;
+	border: 2px inset navy;
+	width: 12em;
+	padding: 2px 4px;
+}
+
+#header-top .nice-menu a {
+	color:	#393B6C;
+	font-size: 15px;
+}
+
+#block-nice_menus-2 { 
+	float: right;
+	overflow: visible;
+	/* special hack from stackoverflow that keep the menu in 1 line */
+	/*min-width: 400px; */
+	width: auto !important; 
+	width:  200px;
+}
+
+#nice-menu-2 ul.nice-menu li,
+#nice-menu-2 li,
+#nice-menu-2 ul.nice-menu-down li {
+	border: 0 none;
+}
+
+#block-block-12 {
+	display: block;
+	float: left;
+	width: auto;
+}
+
+/* same 2 definitions... one should probably work.
+   this is due to people screwing with global selectorz!!! */
+#user-management tr td, 
+#user-management tr, 
+#user-management tbody,
+#user-management td, 
+#user-management table,
+#user-management {
+	border-color: transparent;
+	border-width: 0;
+	border-bottom: 0;
+	border-bottom: 0 none;
+	border-top: 0 none;
+	border: 0 none;
+}
+
+#user-management .um-login {
+    padding-top: 7px;
+}
+
+.um-item {
+	padding: 0em 5px 0 5px;
+}
+
+#userfuckingpicture {
+	height: 41px;
+	overflow: hidden;
+}
+
+.um-login {
+}
+
+#page {
+	border-top: 10px solid orange;
+}
+
+/* here should not be titles or dragons */
+#block-search-0 h2,
+#block-nice_menus-2 h2,
+#block-search-0 .form-submit,
+#edit-search-block-form-1-wrapper > label {
+	display: none;
+}
+
+#header-group-wrapper {
+	display: none;	/* during maintenance only */
+}
+
+#header-top {
+	border-bottom: 1px solid #B8B4C3;
+	background-color: #E6E6F0;
+}
+
+#block-menu-primary-links li.expanded { 
+	/* the little arrow indicating a dropdown-menu.
+	i remove it since this particular LI is too narrow,
+	thus the arrow is over the text. */
+	list-style-image: none; 
+	list-style-type: none; 
+}
+
+#site-logo {
+	margin-top: 0.5em;
+	float: right;
+}
+#block-block-13 {
+	width: 200px;
+}
+
+
+/* shahar, create content menu 26/03/2012 */
+#block-nice_menus-3 { 
+	border-top: 1px solid #c0c0c0;
+	padding-top: 0.5em;
+	overflow: visible; 
+	padding-bottom: 1em;
+	height: 20px;
+}
+#block-nice_menus-3 ul.nice-menu ul {
+	top: 2.5em;
+}
+#nice-menu-3 .first a { 
+	xcolor: black;
+}
+#block-nice_menus-3 li {
+	margin-bottom: 0;
+}
+#block-nice_menus-3 div.content { 
+	overflow: visible;
+}
+#nice-menu-3 ul.nice-menu li { /* bug in nice menus!? */
+	border-right: 1px solid navy;
+	border-left: 1px solid navy;
+	border-top: 0 none;
+	border-bottom: 0 none;
+}
+	
+#nice-menu-3 > li:hover { 
+	background-color: #dcdcdc;
+}
+#nice-menu-3 > li { 
+	background: none;
+	border-top: 0 none;
+	border-bottom: 0 none;
+	border-right: 1px dotted navy;
+	border-left: 1px dotted navy;
+	color: black;
+}
+#nice-menu-3 > li:first-child > a:link { 
+	color: transparent;
+}
+#nice-menu-3 > li:first-child { 
+	background: url('/sites/default/files/u109/left_btn04.png') no-repeat 0 0 transparent;
+	background-repeat: no-repeat;
+	border: 0 none;
+	width: 100px;
+	height: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+/* book styles */
+
+.booktree ul { 
+	margin-right: 1.6em; /*for rtl */
+	margin-left: 1.6em;  /*for ltr */
+}
+.booktree li {
+	padding: 0;
+	margin: 0;
+}
+
+
+
+
+/* book styles */
+/* double definition with beehive_origins-rtl.css - 
+	todo: find the right one, and disable the other */
+.booktree .tree-level-1,
+.booktree .tree-level-2,
+.booktree .tree-level-3,
+.booktree .tree-level-4,
+.booktree .tree-level-5 {
+	list-style-image: url(/sites/all/themes/beehive_origins/images/book-page-rtl.gif);
+	list-style-type: none;
+	list-style-position: inside;
+}
+.booktree .tree-level-1 { 
+	font-size: 140%;
+	border-top: 3px solid orange;
+	font-weight: bold;
+	line-height: 2.5em;
+}
+.booktree .tree-level-2 { 
+	font-size: 125%;
+	border-top: 1px solid orange;
+	line-height: 1.7em;
+}
+.booktree .tree-level-3 { 
+	font-size: 110%;
+	border-top: 1px dotted orange;
+}
+.booktree .tree-level-4 { 
+}
+.booktree .tree-level-5 { 
+}
+table#context-blockform {
+	width: 630px;
+}
+
+td.selector #context-blockform div.context-blockform-selector {
+	height: 46em !important;
+}
+
+
+
+
+/* --- end of local.css --- */
+
+

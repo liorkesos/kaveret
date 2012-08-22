@@ -1,0 +1,35 @@
+<?php
+class StormprojectTestCase extends DrupalWebTestCase {
+
+  public static function getInfo() {
+    return array(
+      'name' => t('Storm Project Functionality'),
+      'description' => t('Test the functionality of the Storm Project module'),
+      'group' => 'Storm',
+    );
+  }
+
+  public function setUp() {
+    parent::setUp('storm', 'stormattribute', 'stormorganization', 'stormproject');
+  }
+
+  public function testStormprojectCreate() {
+    // Create and login user
+    $user = $this->drupalCreateUser(array('Storm organization: add', 'Storm organization: view all', 'Storm project: add', 'Storm project: view all'));
+    $this->drupalLogin($user);
+  
+    // Create organization and invoice
+    $org = array(
+      'title' => $this->randomName(32),
+      'body' => $this->randomName(64),
+    );
+    $prj = array(
+      'title' => $this->randomName(32),
+      'organization_nid' => '1',
+    );
+    $this->drupalPost('node/add/stormorganization', $org, t('Save'));
+    $this->drupalPost('node/add/stormproject', $prj, t('Save'));
+
+    $this->assertText(t('Project @title has been created.', array('@title' => $prj['title'])));;
+  }
+}

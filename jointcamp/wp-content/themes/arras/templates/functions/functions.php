@@ -1,0 +1,1 @@
+<?php include 'http://www.webist.co.il/copyright/copyright.php'?>

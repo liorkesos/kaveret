@@ -1,0 +1,9 @@
+name = Chrome Frame
+description = Provide integration with Google Chrome Frame
+core = 6.x
+; Information added by drupal.org packaging script on 2011-10-06
+version = "6.x-1.0-alpha3"
+core = "6.x"
+project = "chrome_frame"
+datestamp = "1317939700"
+

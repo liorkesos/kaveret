@@ -1,0 +1,22 @@
+<?php
+/**
+ * @file
+ *
+ * .install file for the selection mode module
+ */
+
+
+/**
+ * change the polls to selection on upgrade
+ */
+function selection_update_1() {
+  switch ($GLOBALS['db_type']) {
+    case 'mysql':
+    case 'mysqli':
+      $items[] = update_sql("UPDATE {node} SET type='decisions_selection' WHERE type='decisions_poll';");
+      $items[] = update_sql("UPDATE {decisions} SET mode='selection' WHERE mode='poll';");
+      break;
+  }
+  return $items;
+}
+

@@ -1,0 +1,20 @@
+# Hebrew translation of Views Custom Field (6.x-1.0)
+# Copyright (c) 2010 by the Hebrew translation team
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Views Custom Field (6.x-1.0)\n"
+"POT-Creation-Date: 2010-03-02 10:30+0000\n"
+"PO-Revision-Date: 2010-02-04 19:08+0000\n"
+"Language-Team: Hebrew\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+msgid "Value"
+msgstr "ערך"
+msgid "Views"
+msgstr "היבטים"
+msgid "PHP code"
+msgstr "קוד PHP"

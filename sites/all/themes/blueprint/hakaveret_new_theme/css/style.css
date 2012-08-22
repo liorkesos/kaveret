@@ -1,0 +1,491 @@
+/* custom CSS */
+
+body {
+  font-size: 16px;
+}
+
+li , li li {
+ list-style: none;
+ list-style-type: disc;
+
+}
+ul.menu li ul {
+    margin: 0;
+}
+
+ul li, ul.menu li, .item-list ul li, li.leaf {
+    list-style-image: none;
+}
+.block ul, ul.menu, .item-list ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+li.collapsed {
+    list-style-type: none;
+}
+li.expanded {
+    list-style-image: none;
+    list-style-type: none;
+   
+}
+
+li.leaf {
+    list-style-image: none;
+    list-style-type: none;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+/*-------------- Site Width ------------------- */
+.container {
+}
+
+/*-------------- heder ------------------- */
+
+/* block-menu-primary-links */
+
+#block-menu-primary-links .content {
+  margin: 11px 0 0;
+}
+/* first level menu */
+#block-menu-primary-links li {
+  float: left;
+  background: url("../images/primary-links-with-down-arrow.gif") no-repeat 50% 21px #f9ab17;
+  height: 30px;
+  font-size: 12px;
+  position: relative;
+}
+#block-menu-primary-links li.first {
+ margin-right: 6px;
+}
+/*rest for second level li*/
+
+#block-menu-primary-links li li.first {
+ margin-right: 0;
+}
+#block-menu-primary-links li a {
+ color: #fff;
+ width: 74px;
+ text-align: center;
+ padding: 3px;
+  display: inline-block;
+}
+/* scound level menu */
+
+
+#block-menu-primary-links ul.menu li ul {
+    margin: 6px 0 0;   
+    display: none;
+    position: absolute; 
+    z-index: 100;
+}
+#block-menu-primary-links ul.menu li:hover ul {
+  display: block;
+}
+#block-menu-primary-links li li {
+ float: none;
+ padding: 0;
+ margin: 0;
+ background-image: none;
+}
+#block-menu-primary-links li li a {
+   border-top: 1px solid;
+   display: inline-block;
+   width: 80px;
+   padding: 6px 0 0;
+    text-decoration: none;
+
+}
+#block-menu-primary-links li.last {
+    box-shadow: 0 0 2px;
+}
+#block-nemu-primary-links li li.last {
+  box-shadow: 0;
+}
+
+/*----------- Top menu ---------------- */
+
+/* block-nice_menus-2 */
+#block-nice_menus-2 {
+  margin-top: 12px;  
+}
+#block-nice_menus-2 li{
+  float: right;  
+}
+
+ul.nice-menu li ul{
+    border-top: none;
+    background: #fff;
+    z-index: 10;
+    margin: 0;
+    padding: 0 0 20px;
+}
+/*reset the background img */
+ul.nice-menu li ,ul.nice-menu li li , ul.nice-menu-down li.menuparent , ul.nice-menu-down li.menuparent {
+    background: none;
+    border: none;
+    list-style: none;
+    margin: 5px 0 0;
+}
+#block-nice_menus-2 ul.nice-menu .menuparent a {
+    padding-right: 18px;
+    padding-left: 18px;
+}
+#block-nice_menus-2 ul.nice-menu li a {
+    color: #123274;
+    border-left: 1px solid #123274 ;
+    padding: 5px 18px;
+    line-height: 5px;
+    font-size: 16px;
+}
+#block-nice_menus-2 ul.nice-menu li:hover a {
+  background: none;
+  
+}
+#block-nice_menus-2 ul.nice-menu li.menuparent li {
+    margin: 5px 0;
+    border-left: none ;
+    display: inline-block;
+}
+ 
+
+#block-nice_menus-2 ul.nice-menu li.last a  {
+  border: none;
+  padding: 5px 18px 0 0;
+}
+#block-nice_menus-2 ul.nice-menu li li a  ,#block-nice_menus-2 ul.nice-menu li li.last a{
+  border: none;
+  padding: 15px 18px 0 0;
+}
+#block-nice_menus-2.block div.content ul#nice-menu-2.nice-menu li {
+    background: none;
+}
+
+/*------------ search ------------------*/
+.block-search form {
+  padding: 0 36px 0 0;
+}
+ /*------ hide the 'search this site' and the site button  ------*/
+#search-block-form  label , #search-block-form .form-submit {
+  display: none; 
+}
+
+#search-block-form  input {
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  background: url("../images/search_magnifying_glass.gif") no-repeat 9px 50%;
+  border: 1px solid #989696;
+  width: 210px;
+  height: 23px;
+  padding: 0 10px;
+}
+#search-block-form div.form-item {
+    margin-bottom: 0em;
+    margin-top: 0em;
+}
+/*********************************************************************/
+/*************************  CONTENT ***********************************/
+/*********************************************************************/
+
+/*center the under content blocks */
+.frame {
+   margin: 0 auto;
+   width: 950px
+}
+
+#site_full_width .block-quicktabs {
+    clear: both;
+    height: 260px;
+    margin: 0 0 25px;
+}
+
+
+
+#site_full_width .block-quicktabs.even {
+    background: #fcf0d8;
+}
+
+
+#site_full_width li{
+    float: left;  
+    list-style: none;
+}
+
+#site_full_width h2 {
+  background: url("../images/lozenge-shaped.png") no-repeat scroll right 50% transparent;
+    color: #B01919;
+    float: right;
+    font-size: 24px;
+    padding: 0 29px 0 0;
+    margin: 0 0 5px;
+}
+#site_full_width ul.quicktabs_tabs li a{
+    font-size: 14px;
+    color: #B01919;
+    padding: 0 25px 0 0;
+}
+#site_full_width .quicktabs_main {
+    clear: both;
+}
+#site_full_width  .quicktabs_main  ul li {
+    margin: 0 16px 0 0;
+}
+#site_full_width   ul.quicktabs-style-nostyle li {
+    margin: 13px 0 0;
+}
+
+#site_full_width  div#quicktabs_container_aboutus.quicktabs_main div.view-content ul li.views-row-3 {
+    margin: 0;
+}
+#site_full_width  .views-field-last-updated{
+   background: #9f2772;
+   color: #fff;
+   height: 25px;
+}
+#site_full_width  .views-field-last-updated .field-content{
+  float: right;
+  margin: 4px 10px;
+}
+#site_full_width  .views-field-last-updated-1 span {
+  float: left; 
+  margin: -20px  0 0 9px;
+  color: #fff;
+}
+
+#site_full_width  .views-field-title {
+ background: #9f2772;
+}
+#site_full_width .views-field-title a {
+  color: #fff;
+}
+
+/********* Front Page boxs staf **********/
+
+#site_full_width .views-field-phpcode {
+  height: 135px;
+  padding: 5px 7px;
+  
+}
+ 
+
+#site_full_width #content-content {
+  background: #fff;
+  padding: 5px 7px;
+}
+#site_full_width  .views-field-title span {
+ margin: 2px 10px;
+ font-weight: bold;
+ display: inline-block;
+}
+#site_full_width .view td {
+  overflow: hidden;
+}
+
+th, td, caption {
+}
+/*********************************************************************/
+/*************************  RTIGHT ***********************************/
+/*********************************************************************/
+.span-4 {
+    width: 190px;
+    margin: 0 0 0 7px;
+    
+}
+
+/*------------ main manu - icons on the right side ------------------*/
+ul#main_four_menu {
+	
+}
+
+ul#main_four_menu li {
+    float: left;
+    height: 95px;
+    width: 95px;
+    list-style: none;
+    background: url('../images/big-icons.png') no-repeat 50% 0;
+}
+
+ul#main_four_menu li#community{ background-position: 50% 18px; } 
+ul#main_four_menu li#dreams{ background-position: 50% -69px;  } 
+ul#main_four_menu li#education_center{ background-position: 50% -155px;  } 
+ul#main_four_menu li#resource_exchange{ background-position: 50% -241px;  } 
+
+
+ul#main_four_menu div {
+	 /* webkit example */
+        background-image: -webkit-gradient(
+          linear, right top, left top, from(rgba(255, 255, 255, 1.0)),
+          to(rgba(255, 255, 255, 0))
+        );
+        /* mozilla example - FF3.6+ */
+        background-image: -moz-linear-gradient(
+          right center,
+          rgba(255, 255, 255, 1.0) 5%, rgba(255, 255, 255, 0) 95%
+        );
+        /* IE 5.5 - 7 */
+        filter: progid:DXImageTransform.Microsoft.gradient(
+          gradientType=1, startColor=0, endColorStr=#FFFFFF
+        );
+         /* IE8 uses -ms-filter for whatever reason... */
+        -ms-filter: progid:DXImageTransform.Microsoft.gradient(
+          gradientType=1, startColor=0, endColoStr=#FFFFFF
+        );
+           -webkit-background-size: 100% 7%;
+           -moz-background-size: 100% 7%;
+           background-size: 100% 7%;
+           background-repeat: no-repeat;
+            background-position: 0 100%;  
+           
+           -webkit-transition: all .7s linear;
+           -moz-transition: all .7s linear;
+           -o-transition: all .7s linear;
+           -ms-transition: all .7s linear;
+           transition: all .7s linear;  
+}
+ul#main_four_menu div:hover {
+     background-position: -100% -102%;
+}
+
+ul#main_four_menu li  a {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 75px 0 0;
+    text-align: center;
+    width: 100%;
+    -webkit-transition: color 0.5s ease-in;
+    -moz-transition: color 0.5s ease-in;
+    -o-transition: color 0.5s ease-in;
+    -ms-transition:color 0.5s ease-in;
+    transition: color 0.5s ease-in;
+}
+
+
+
+/*------------ under main manu - icons  ------------------*/
+
+ul#shering {
+    clear: both;
+}
+
+
+#shering li {
+    background: url('../images/csg-4fcf427bae163.png') no-repeat top left;
+    height: 32px;
+    width: 32px;
+    float: left;
+    overflow: hidden;
+    margin: 20px 0px 0;
+    text-indent: -9999px;
+}
+#shering li.sprite-facebook{ background-position: 0 0; width: 31px; height: 31px; } 
+#shering li.sprite-rss{ background-position: 0 -32px; width: 32px; height: 31px; } 
+#shering li.sprite-twiiter{ background-position: 0 -64px; width: 32px; height: 31px; } 
+#shering li.sprite-youtube{ background-position: 0 -96px; width: 31px; height: 31px; } 
+#shering li.likeabee_logo{
+   background: url('../images/likeabee_logo.png') no-repeat 0 0;
+   float: right;
+   width: 61px;
+}
+/*********************************************************************/
+/*************************  Fotter ***********************************/
+/*********************************************************************/
+
+#footer {
+    background: #9f2772;
+}
+#footer-dot {
+    border-top: 1px dashed #FFFFFF;
+    display: inline-block;
+    margin: 5px 0 0;
+    width: 100%;
+}
+
+
+#footer li{
+    list-style: none;
+    
+}
+#small-icons li {
+    background: url('../images/csg-4fd078facf347.png') no-repeat top left;
+    margin: 7px 7px 0 ;
+    float: left;
+    text-indent: -9999px;
+}
+#small-icons li.sprite-fotter-community{ background-position: 0 0; width: 24px; height: 23px; } 
+#small-icons li.sprite-fotter-dream{ background-position: 0 -24px; width: 24px; height: 24px; } 
+#small-icons li.sprite-fotter-education_center{ background-position: 0 -49px; width: 24px; height: 24px; } 
+#small-icons li.sprite-fottet-resource_exchange{ background-position: 0 -74px; width: 24px; height: 24px; } 
+
+#fotter-menu li {
+    float: left;
+    margin: 11px 0 0;
+}
+
+#fotter-menu li a{
+   color: #ffd4ff;
+   padding: 0 20px;
+   border-right: 1px solid #ffd4ff;
+}
+
+#footer #name p {
+    color: #FFD4FF;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 7px 0 0;
+}
+
+
+/*--- front page slogen ------*/
+
+.front-page-main-n {
+  position: relative;
+}
+
+
+.front-page-main-n p , .front-page-main-n img {
+ margin: 0;
+
+}
+
+.slogan {
+  position: absolute;
+  left: 40px;
+  top: 24px;
+  font-size: 13px;
+}
+.slogan h1 {
+  color: #9f2772;
+  font-weight: bold;
+  margin: 0;
+
+}
+.slogan h1#second {
+  font-size: 42px;
+}
+
+.view-groups-featured-groups .views-row {
+  float: left;
+  height: 195px;
+  overflow: hidden;
+}
+.view-groups-featured-groups .views-row-last {
+  margin: 0;
+}
+
+#site_full_width div.view {
+  margin-left:0px;
+  margin-right: 0;
+  float: left;
+}
+#site_full_width .colum-last , #site_full_width .col-last {
+  margin: 0;
+}

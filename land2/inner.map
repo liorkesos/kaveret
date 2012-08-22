@@ -1,0 +1,12 @@
+<img src="inner.xcf" width="99" height="113" border="0" usemap="#map" />
+
+<map name="map">
+<!-- #$-:Image map file created by GIMP Image Map plug-in -->
+<!-- #$-:GIMP Image Map plug-in by Maurits Rijk -->
+<!-- #$-:Please do not edit lines starting with "#$" -->
+<!-- #$VERSION:2.3 -->
+<!-- #$AUTHOR:Administrator -->
+<area shape="poly" coords="2,28,50,55,49,112,2,85" onmouseover="over(&apos;http://inner-left&apos;)" onmouseout="out(&apos;http://inner-left&apos;)" href="http://inner-left" />
+<area shape="poly" coords="3,28,49,2,96,29,50,54" onmouseover="over(&apos;inner-top&apos;)" onmouseout="out(&apos;inner-top&apos;)" href="http://inner-top" />
+<area shape="poly" coords="50,111,96,85,96,30,51,55" onmouseover="over(&apos;inner-right&apos;)" onmouseout="out(&apos;inner-right&apos;)" href="http://inner-right" />
+</map>

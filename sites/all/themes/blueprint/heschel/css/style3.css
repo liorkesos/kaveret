@@ -1,0 +1,592 @@
+/* put your custom CSS in here */
+body {
+    background: #efefef; 
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+#hecshel-logo {
+  background:url("../image/heschel-logo-big.png") no-repeat 9px 16px;
+  height: 159px;
+  width: 180px;
+  margin: 2px 0 0;
+  float: right;
+}
+#hakaveret-logo {
+   background:url("../image/hakaveret.png") no-repeat 0 0;
+   width: 73px;
+   height: 17px;
+   margin: 17px 0 0 21px;
+   float: left;
+}
+#shinoy {
+	background: url("../image/shinui-logo.png") no-repeat scroll 0 0 transparent;
+	float: left;
+	height: 37px;
+	margin: 0 0 0 18px;
+	width: 172px;
+}
+#top-icons {
+  float: left;
+  margin: 10px 0 9px;
+}
+#top-icons ul li{
+  background: url( "../image/top-icons.png") no-repeat top left;
+    float: left;
+	text-indent: -9999px;
+	margin: 0 12px 0 0;
+	width: 26px; height: 26px; 
+	overflow: hidden;
+}
+#top-icons ul li#sprite-facebook{ background: url("/sites/all/themes/blueprint/heschel/image/facebook-icon.png") no-repeat scroll 0 0 transparent; width: 27px; height: 26px; } 
+#top-icons ul li#sprite-twitter{ background: url("/sites/all/themes/blueprint/heschel/image/twitter-icon.png") no-repeat scroll 0 0 transparent; width: 27px; height: 26px; } 
+#top-icons ul li#sprite-youtube{ background: url("/sites/all/themes/blueprint/heschel/image/youtube-icon.png") no-repeat scroll 0 0 transparent; width: 27px; height: 26px; } 
+
+#search-box {
+  float: right;
+  padding: 0px 28px 0 0;
+}
+div.form-item {
+    margin-bottom: 0.2em;
+    margin-top: 0.2em;
+}
+#search-box input#edit-submit , #search-box input#edit-submit-1 , #search-box input#edit-submit-2 , #search-box input#edit-submit-3  {
+    background:url("../image/magn.png") no-repeat 0 0;
+    height: 29px;
+    width: 37px;
+    text-indent: -999px;
+    border: none;
+    position: relative;
+    right: -4px;
+    cursor: pointer;
+    vertical-align: top;
+    top: 0px;
+}
+#search-box input#edit-search-theme-form-1 {
+    background:url("../image/search.png") no-repeat 0 0;
+    height: 29px;
+    width: 113px;
+    border: none;
+    margin: 0;
+}
+
+
+/* menu */
+#block-menu-menu-hecshel-menu {
+    float: right;    
+}
+#block-menu-menu-hecshel-menu ul{
+   margin: 115px 0px 0 0px;
+}
+#block-menu-menu-hecshel-menu li{
+   float: right;
+   text-align: center;
+   position: relative;
+   padding: 0 0 15px;
+}
+#block-menu-menu-hecshel-menu li a{
+    color: #FFFFFF;
+    display: inline-block;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 6px 0 5px;
+    text-decoration: none;
+    width: 96px;
+    border-right: 1px solid;
+  
+}
+/* menu colors  */
+#block-menu-menu-hecshel-menu ul li.expanded {
+    background-color: #fff;
+}
+#block-menu-menu-hecshel-menu li a#heschel-about{
+  background: #b3003d;
+  -webkit-border-top-right-radius: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+  -moz-border-radius-topright: 5px;
+  -moz-border-radius-bottomright: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-right: none;
+}
+#block-menu-menu-hecshel-menu li:hover a#heschel-about{
+  background: #c90145;
+}
+#block-menu-menu-hecshel-menu li a#heschel-about-se{
+  background: #8c7751;
+}
+#block-menu-menu-hecshel-menu li:hover a#heschel-about-se{
+  background: #a0895d;
+}
+#block-menu-menu-hecshel-menu li a#heschel-what-are-we-doing{
+  background: #d55a21;
+}
+#block-menu-menu-hecshel-menu li:hover a#heschel-what-are-we-doing{
+  background: #d17347;
+}
+#block-menu-menu-hecshel-menu li a#heschel-contact-us{
+  background: #de9c0e;
+}
+#block-menu-menu-hecshel-menu li:hover a#heschel-contact-us{
+  background: #dbab45;
+}
+#block-menu-menu-hecshel-menu li a#donations{
+  background: #626321;
+}
+#block-menu-menu-hecshel-menu li:hover a#donations{
+  background: #776320; 
+}
+#block-menu-menu-hecshel-menu li a#heschel-english{
+  background: #e4d621;
+  -webkit-border-top-left-radius: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  -moz-border-radius-topleft: 5px;
+  -moz-border-radius-bottomleft: 5px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+/* End of menu */
+body .container .span-12 {
+    margin: 0;
+	/*width: 530px;*/
+}
+
+ 
+
+/* menu - drupdown */
+
+#block-menu-menu-hecshel-menu ul  li.expanded ul.menu {
+    background: #FFFFFF;
+    margin:15px -25px 0;
+    z-index: 1000;
+	position: absolute;
+	padding: 15px 0;
+	border-radius: 10px;
+	-moz-box-shadow:    0 0 9px #000;
+    -webkit-box-shadow: 0 0 9px #000;
+	box-shadow: 0 0 9px #000;
+	width: 155px;
+	display: none;
+
+}
+#block-menu-menu-hecshel-menu ul  li.expanded:hover ul.menu{
+  display: block;
+  
+}
+
+#block-menu-menu-hecshel-menu li.expanded  li{
+   float: none;
+   text-align: right;	
+   background: #fff;
+   padding: 0 22px;
+   
+
+   }
+
+#block-menu-menu-hecshel-menu li.expanded:hover{
+   background: url('../image/dropdown-arrow.png') no-repeat 50px 35px;	
+   }
+#block-menu-menu-hecshel-menu li.expanded  li a{
+   color: #8c7751;
+   border: none;
+}
+
+
+div.tabs {
+  /*  display: none;  */
+  
+}
+
+div.container {
+    background-color: #FFFFFF;
+    width: 960px;
+}
+.col-left {
+    width: 180px;
+}
+#main {
+    background-color: #6B99B1;
+}
+ul.menu li {
+    list-style-image: none;
+    list-style-type: none;
+}
+
+/* left menu */
+#block-menu-menu-hescheltag {
+    padding: 20px 29px 0 0;
+}
+#block-menu-menu-hescheltag li {
+    float: right;
+    line-height: 15px;
+}
+#block-menu-menu-hescheltag li a{
+    text-decoration: none;
+}
+#block-menu-menu-hescheltagli a{
+    text-decoration: none;
+}
+#block-menu-menu-hescheltag a#heshel_menu_tag_1 {
+    color: #e59425;
+    font-size: 29px;
+}
+#block-menu-menu-hescheltag a#heshel_menu_tag_2 {
+    color: #db5b26;
+    font-size: 18px;
+}
+#block-menu-menu-hescheltag a#heshel_menu_tag_3 {
+    color: #8b7456;
+    font-size: 14px;
+}
+#block-menu-menu-hescheltag a#heshel_menu_tag_4 {
+    color: #b81743;
+    font-size: 26px;
+}
+#block-menu-menu-hescheltag a#heshel_menu_tag_5 {
+    color: #8b7456;
+    font-size: 20px;
+    padding: 0 5px 0 0;
+}
+#block-menu-menu-hescheltag a#heshel_menu_tag_6 {
+    color: #e59425;
+    font-size: 14px;
+}
+#block-menu-menu-hescheltag a#heshel_menu_tag_7 {
+    color: #f16435;
+    font-size: 22px;
+    letter-spacing: 2.4px;
+}
+#block-menu-menu-hescheltag a#heshel_menu_tag_8 {
+    color: #B81743;
+    font-size: 16px;
+    padding: 0 24px 0 0;
+}
+#block-menu-menu-hescheltag a#heshel_menu_tag_9 {
+    color: #e59425;
+    font-size: 14px;
+}
+#block-menu-menu-hescheltag a#heshel_menu_tag_10 {
+    color: #8B7456;
+    font-size: 14px;
+}
+#block-menu-menu-hescheltag a#heshel_menu_tag_11 {
+    color: #B81743;
+    font-size: 14px;
+    padding: 0 5px 0 0;
+}
+/* End of menu */
+
+
+#block-views-facebook_status_all-block_1 {
+    clear: both;
+    overflow: hidden;
+    padding: 0 16px 0 0;
+    width: 150px;
+}
+#block-views-facebook_status_all-block_1 h3{
+   background: none repeat scroll 0 0 #DB5B26;
+    color: #FFFFFF;
+    display: inline-block;
+    margin: 15px 0 0;
+    padding: 10px 10px 5px;
+    width: 143px;
+}
+
+#block-views-facebook_status_all-block_1 div.facebook-status-item {
+    height: 2.6em;
+    overflow: hidden;
+}
+#block-views-facebook_status_all-block_1 div.facebook-status-item:hover{
+    height: 100%;
+}
+#block-views-facebook_status_all-block_1  tbody tr:nth-child(2n) td, tbody tr td  {
+  background: #fff;
+  border-bottom: 1px solid #c5baab;
+}
+
+/* End of facebook module */
+
+.views_slideshow_pause {
+	display: none;
+}
+.heschel-homepage {
+  position: relative;
+  right: -10px;
+  width: 768px;
+  float: right;
+}
+.heschel-not-homepage {
+border-left: 1px solid #D1C9B9;
+border-right: 1px solid #D1C9B9;
+float: right;
+font-size: 16px;
+margin: 20px 0 17px 20px;
+padding: 0 75px 0 40px;
+position: relative;
+right: -10px;
+width: 463px;
+}
+.heschel-not-homepage h1.page-title {
+    padding: 0 0;
+}
+
+
+/* slideshow */
+.view-heschel-slideshow{
+  /*  position: relative;
+    width: 750px;*/
+}
+.views_slideshow_next {
+    background: url("../image/heschel_arrow_main_slideshow.png") no-repeat scroll left top transparent ;
+    float: left;
+    height: 34px;
+    position: absolute;
+    text-indent: -9999px;
+    top: 100px;
+    left: 15px;
+    width: 34px;
+  z-index: 100;
+}
+.views_slideshow_previous {
+    background: url("../image/heschel_arrow_main_slideshow.png") no-repeat scroll right top transparent;
+    float: right;
+    right: 15px;
+    height: 34px;
+    position: absolute;
+    text-indent: -9999px;
+    top: 100px;
+    width: 33px;
+    z-index: 100;
+}
+
+.view-small-heschel-slideshow h4 {
+	margin: 0;
+	font-weight: bold;
+}
+ 
+
+/* small slide show */
+
+.view-small-heschel-slideshow {
+    float: right;
+    width: 250px;
+    margin-left: 9px;
+}
+.view-small-heschel-slideshow.change {
+margin: 0;
+}
+.view-small-heschel-slideshow .view-content{
+    position: relative;
+}
+
+.views-slideshow-controls-top {
+   
+}
+
+.views-field-field-short-desc-value {
+    background: url("../image/small_slideshow_bg.png") repeat-x scroll 0 0 transparent;
+    color: #000000;
+    height: 53px;
+    padding: 4px 8px;
+    position: absolute;
+    top: 115px;
+    width: 234px;
+}
+.views-field-field-short-desc-value p {
+  
+   
+}
+
+.view-small-heschel-slideshow .views_slideshow_next {
+    background: url("../image/small_slideshow_arrow.png") no-repeat scroll right top transparent;
+    float: right;
+    right: 7px;
+    height: 34px;
+    position: absolute;
+    text-indent: -9999px;
+    top: 50px;
+    width: 26px;
+    z-index: 100;
+}
+
+.view-small-heschel-slideshow .views_slideshow_previous{
+    background: url("../image/small_slideshow_arrow.png") no-repeat scroll left top transparent;
+    height: 34px;
+    position: absolute;
+    right: 216px;
+    text-indent: -9999px;
+    top: 50px;
+    width: 26px;
+    z-index: 100;
+}
+
+
+
+/* -------------slideshow in inner pages ---------- */
+.heschel-right .view-small-heschel-slideshow {
+    width: 156px;
+}
+.heschel-right .views_slideshow_previous {
+    top:106px;
+    right: 124px;
+
+}
+.heschel-right .views_slideshow_next {
+    top: 106px;
+
+}
+
+#block-block-19 h2 {
+    background: #8b7456;
+    color: #fff;
+    padding: 0 15px;
+}
+
+#block-menu-menu-merkaz-kayamut-top ul li{
+    display: inline-block;
+    list-style-image: none;
+}
+#header {
+    /*background: url("../image/top2.gif") no-repeat left top #fff; */
+    margin: 0;
+    width: 100%;
+}
+.og-context-419 #block-views-user_meta-block_1 {
+    display: none;
+}
+ul.menu {
+    margin: 0;
+}
+ul li.expanded {
+    background-color: #BCDAE9;
+}
+ul li.expanded a {
+    color: #6C1A13;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0 10px;
+}
+ul li.expanded ul li {
+    background-color: #6B99B1;
+}
+ul li.expanded ul li a {
+    color: #FFFFFF;
+    display: block;
+    font-size: 12px;
+    font-weight: normal;
+    text-decoration: none;
+}
+#block-menu-menu-merkaz-kayamut-top {
+    margin-top: 100px;
+}
+#block-menu-menu-merkaz-kayamut-top ul li {
+    text-align: center;
+    width: 100px;
+}
+#block-menu-menu-merkaz-kayamut-top ul li a{
+    color: #DF4D12;
+    font-weight: bold;
+    text-decoration: none;
+}
+h1.page-title {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 0 20px;
+    line-height: 27px;
+}
+/* -------- left--------------*/ 
+.heschel-right {
+/*  border: 1px solid red;  */ 
+width: 153px; 
+float: right;
+}
+
+.span-5 {
+    width: 180px;
+}
+.heschel-right li{
+    list-style: none;
+}
+.heschel-right ul {
+   margin: 0;
+   padding: 0;
+}
+.heschel-right .view-small-heschel-slideshow  a {
+   text-decoration: none; 
+}
+.heschel-right .views-field-field-short-desc-value {
+  padding: 0;
+  width: 154px;
+}
+
+ul li, ul.menu li, .item-list ul li, li.leaf {
+    list-style-image: none;
+    list-style: none;
+} 
+.heschel-right .views-field-field-short-desc-value {
+    position: static;
+    background: none;
+}
+
+.heschel-right  div.view a h4 {
+    color: #8c7751;
+    background: #e0dace;
+	margin: 15px 0 0;
+	border-radius: 4px;
+	padding: 8px;
+}
+
+.heschel-right span.field-content a p { 
+  color: #8c7751;
+}   
+
+
+.tabs {
+  /*display: none; */
+} 
+
+/* ---------- Heschel News ---------- */
+
+.heschel-news , .heschel-news a {
+  color: #8c7751;
+}
+
+
+.heschel-news h3 {
+  color: #fff;
+  background: #e69426;
+  border-radius: 5px;	
+  margin: 15px  10px;
+  padding: 5px;
+  clear: both;
+  width: 146px;
+  display: inline-block;
+
+}
+
+.view-heschel-news {
+  margin: 6px  17px 17px;
+}
+
+.view-heschel-news .views-field-title {
+  font-weight: bold;
+}
+.view-heschel-news .views-row {
+  border-bottom: 1px dashed;
+  margin: 0 0 10px;
+}
+
+.view-heschel-news p {
+  margin: 0 0 0.5em;
+}
+table#attachments,
+.node ul.links.inline,
+.book-navigation {
+    display:none;
+}

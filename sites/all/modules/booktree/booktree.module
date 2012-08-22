@@ -1,0 +1,169 @@
+<?php
+// $Id: booktree.module,v 1.11.2.8 2009/10/23 23:09:10 uccio Exp $
+
+/**
+ * @file
+ * The booktree module is usefull to draw a simple tree index of drupal books
+ *
+ */
+
+
+
+function booktree_help($path, $arg) {
+  $output = '';
+  switch ($path) {
+    case "admin/help#booktree":
+      $output = '<p>'.  t('This module create a tree rappresentation of one book.') .'</p>';
+      break;
+  }
+  return $output;
+} 
+
+function booktree_perm() {
+  return array('access booktree');
+}
+
+
+function booktree_menu() {
+  $items['booktree'] = array(
+      'title' => t('BookTree'),
+      'description' => t('Book Index.'),
+      'page callback' => 'booktree_indice',
+      'access arguments' => array('access booktree'),
+      'type' => MENU_NORMAL_ITEM,
+      );
+  
+  $items['booktree/%'] = array(
+      'title' => t('BookTree'),
+      'description' => t('Book Index.'),
+      'page callback' => 'booktree_indice',
+      'access arguments' => array('access booktree'),
+      'type' => MENU_CALLBACK,
+      );
+  
+  $items['booktree/%/%'] = array(
+      'title' => t('BookTree'),
+      'description' => t('Book Index.'),
+      'page callback' => 'booktree_indice',
+      'access arguments' => array('access booktree'),
+      'type' => MENU_CALLBACK,
+      );
+  
+  $items['booktree/%/%/%'] = array(
+      'title' => t('BookTree'),
+      'description' => t('Book Index.'),
+      'page callback' => 'booktree_indice',
+      'access arguments' => array('access booktree'),
+      'type' => MENU_CALLBACK,
+      );
+  
+  $items['admin/settings/booktree'] = array(
+      'title' => t('BookTree'),
+      'description' => t('Manage the tree-view of book.'),
+      'page callback' => 'drupal_get_form',
+      'page arguments' => array('booktree_configure'),
+      'access arguments' => array('access administration pages'),
+      'type' => MENU_NORMAL_ITEM,
+      );
+  return $items;
+}
+
+
+function booktree_configure() {
+  $form = array();
+  $form['booktree_start'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Root Node ID'),
+    '#required' => TRUE,
+    '#default_value' => variable_get('booktree_start', 5),
+    '#description' => t('Start point of the tree (the root).')
+   
+  );
+  
+  $form['booktree_deep'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Deep Max'),
+    '#required' => TRUE,
+    '#default_value' => variable_get('booktree_deep', 5),
+    '#description' => t('Max deep of the tree with the root.')
+   
+  );
+  $form['booktree_trim'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Trimmer'),
+    '#required' => TRUE,
+    '#default_value' => variable_get('booktree_trim', 45),
+    '#description' => t('Max length of title.')
+  );
+  return system_settings_form($form);
+ 
+}
+
+
+/*
+ * This will output the book from the start point specified in the
+ * arguments, or take the default in the configuration
+ * The arguments are in the order: start node/depth/max title length
+ * If only two arguments are present then the max title length is set to 256
+ */
+
+function booktree_indice() {
+  drupal_add_css(drupal_get_path('module', 'booktree') .'/booktree.css', 'module', 'all', FALSE);
+  if (arg(1)) {
+    $booktree_start = arg(1);
+    arg(2) ? $maxricursione = arg(2)+2 : $maxricursione=variable_get('booktree_deep', 5)+2;
+    arg(3) ? $trimval = arg(3) : $trimval = 256;
+  }
+  else {
+    $booktree_start = variable_get('booktree_start', 1);
+    $maxricursione = variable_get('booktree_deep', 5)+2;
+    $trimval = variable_get('booktree_trim', 35);
+  }
+
+  $node = node_load(array('nid' => $booktree_start));
+  drupal_set_title(check_plain($node->title));
+  $content = '<p>'. check_markup($node->body, $node->format, FALSE) .'</p>';
+  $ricursione = 1;
+  $content .= _booktree_mostra_figli($node->book['mlid'], $node->nid, $node->title, $ricursione, $maxricursione, $trimval, $node->book['mlid']);
+  return $content; 
+}
+  
+
+function booktree_render_tree($nid = NULL) {
+  if ($nid) {
+    drupal_add_css(drupal_get_path('module', 'booktree') .'/booktree.css', 'module', 'all', FALSE);
+    $maxricursione = variable_get('booktree_deep', 5)+2;
+    $node = node_load($nid);
+    return _booktree_mostra_figli($node->book['mlid'], $node->nid, $node->title, 1, $maxricursione, 256, $node->book['mlid']);
+    
+  }
+}
+
+function _booktree_mostra_figli( $mlid, $nid, $tit, $ricursione, $maxricursione, $trimval, $mlid_start) {
+  if ($ricursione<$maxricursione) {
+    $sql= "SELECT DISTINCT n.nid as nid, m.plid as plid, m.mlid as mlid,  n.title as title ,m.weight 
+           FROM {book} as b
+           inner join {menu_links} as m ON b.mlid = m.mlid
+           inner join {node} as n ON n.nid = b.nid
+           WHERE m.plid = '%d'  AND n.status = 1
+           ORDER by m.weight, n.title
+           ";
+    $children = db_query(db_rewrite_sql($sql), $mlid);
+    //Now hide a root book node
+    if ($mlid != $mlid_start) {
+      $content .= "<li class=\"booktree tree-level-". ($ricursione - 1) ."\">" . l(truncate_utf8($tit, $trimval, TRUE, TRUE), 'node/'. $nid , $attributes = array(), $query = NULL, $fragment = NULL, $absolute = FALSE, $html = FALSE ) ."</li>";
+    }
+    $ricursione++;
+    while ($child = db_fetch_object($children)) {
+      $c .= _booktree_mostra_figli($child->mlid, $child->nid, $child->title, $ricursione, $maxricursione, $trimval, $mlid_start);
+    }
+    //now write content only if necessary 
+    if (strlen($c) > 2) {
+      $content .= "<ul class=\"booktree\">\n". $c ."</ul>\n"; 
+    }
+    return $content;
+  }
+  else {
+    return '';
+  }
+}

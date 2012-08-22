@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<TITLE>Like-A-Bee - הכוורת</TITLE>
+	<link rel="shortcut icon" href="/favicon.ico" />
+	<link type="text/css" rel="stylesheet" href="reset.css" />
+	<link type="text/css" rel="stylesheet" href="landing.css" />
+	<meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+	<script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="landing.js"></script>
+
+</HEAD>
+
+
+<BODY bgcolor="black">
+
+
+	<iframe name="george" id="george" width=5 height=5 src=""></iframe>
+
+	<div id='main'>
+
+
+		<div id='top-hive' onmouseover="hover('tooltip-top', 'show')" onmouseout="hover('tooltip-top', 'hide')"></div>
+		<div id='left-hive' onmouseover="hover('tooltip-left', 'show')" onmouseout="hover('tooltip-left', 'hide')"></div>
+		<div id='right-hive' onmouseover="hover('tooltip-right', 'show')" onmouseout="hover('tooltip-right', 'hide')"></div>
+
+		<div id='shadow-top'></div>
+		<div id='shadow-left'></div>
+		<div id='shadow-right'></div>
+
+		<div id='tooltip-top'>
+			<p>הכוורת היא הבית שלנו, מקום ממנו נצא לגלות עולם חדש של ידע, אמת וחכמה. </p>
+			<p>מקום של הפריה הדדית, התעוררות והתחנכות. כאן ניתן ללמוד על הרעיונות המקוריים והמופלאים שמתהווים בעולם.</p>
+			<p>כאן נוכל  לחשוף גם את האמת על התנהלות אנשים ארגונים וחברות  וננסה להבין ביחד איך משתנים ומשנים, ואיזה דרכים יכולות להוביל לחיים מיטיבים.</p>
+			</div>
+
+		<div id='tooltip-left'>
+			<p>הכוורת מעניקה כלים יעילים שמאפשרים ליזום ולהוציא לפועל חלומות אישיים ומשותפים.</p>
+			<p>היא המקום הטבעי שבו נפגשים רעיונות ומשאבים והופכים ליוזמות מקיימות. </p>
+			<p>כאן אפשר לתמוך בעשייה מיטיבה, וגם להתאגד כנחיל העוקץ את הפוגעני ומפרה את הראוי ופועל לקידום צדק חברתית, הגינות וערבות. </p>
+
+		</div>
+
+		<div id='tooltip-right'>
+			<p>הכוורת היא מקום המפגש שלנו, מרקם של אנשים, ארגונים ורשתות המאמינים שניתן <br />
+			לשנות ושמחים לחלוק את תגליותיהם ופעילויותיהם.</p>
+			<p>כאן נפגוש תקוות ויחדיו נפעל להגשמתן, <br />
+			נגלה אהבות ושותפים חדשים, נתחבר ליוזמות שונות, ונשתתף בבניית קהילה רעננה, אמיצה, כנה והוגנת.</p>
+		</div>
+
+		<div id='join-form'>
+			<div id='inner-join' onclick="reset_email(2)">
+				<H1 class=titre>האתר יעלה בקרוב!</H1>
+				<p>בינתיים תוכלו להשאיר פרטים ונעדכן אתכם כשהכוורת תפתח, או לעקוב אחרינו 
+					<a href="http://www.facebook.com/pages/%D7%94%D7%9B%D7%95%D7%95%D7%A8%D7%AA/255386507852131">בפייסבוק</a></p>
+				<BR><BR>
+				<div id="wrongemail" style="display: none; color: red;margin-right: 10px;"><strong>כתובת לא תקינה! <strong></div>
+				<FORM METHOD=POST ACTION="/collect.php" name="frm" id="frm" target=george>
+					<div>
+						<input id="email" name="email" class="nameinput" value='כתובת דוא"ל' onfocus="reset_email(1)" onkeypress="$('#wrongemail').hide('fast');" type="text" size="20" />
+						<button id="join-submit" onclick="contact()"> &nbsp; </button>
+					</div>
+				</FORM>
+				<div id="thanks" style="display: none;"><strong>תודה!<strong></div>
+				<BR>
+			</div>
+		</div>
+		
+		<div id='about'>
+			<div id='innerabout'>
+				<H1 class=titre>אודות הכוורת</H1>
+				<p>אנחנו אנשים וארגונים המתאגדים להגשמת שינוי תודעתי והתנהלותי והכוורת  מציידת אותנו במערכת ההפעלה של "העולם החדש" - הבית אליו כה רבים  מאתנו כמהים.... </p>
+				<p>החלטנו לקחת את האחריות על חיינו לידינו ומעתה לא ניתן שימשיכו לסובב אותנו  בסיפורים ומספרים מניפולטיביים.</p>
+				<p>נחשוף את המידע האמין על מה שקורה, נחלק בינינו את העובדות האמתיות  על החברה, הכלכלה, החינוך, הבריאות ועוד... יחדיו נדאג להעצים את החברות,  המוצרים והשירותים המיטיבים עם האדם והסביבה וכאיגוד צרכני גדול הנאמן  לאיכות נדאג שחברינו ייהנו גם משירותים קהילתיים, פיננסיים ואחרים המיטיבים  אתנו ותואמים את ערכינו וגם מעלויות נמוכות יותר. </p>
+				<p>נתאגד כאנשים וארגונים הנחושים להמשיך ולפעול לקידום המחאה לשלב הבא  שלה ונקדם יישומן של תכניות מעשיות אותן נפתח ונבחן בעזרת שילוב בין  חכמת ההמונים וידיעת מומחים.</p>
+				<p>כרשת של אנשים ורשתות מציעה הפלטפורמה שלוש מערכות מעשיות וייחודיות  להעצמת אנשים וארגונים כדי לחולל שינויים יסודיים בכל הרמות: האישית,  המקומית-קהילתית והארצית. </p>
+				<p>הכוורת מאפשרת להעמיק בחקר השאלה מה עושה מקום, למקום שטוב לחיות בו  ומעניקה כלים מדהימים ליזמים וארגונים על מנת להגשים ביעילות את התובנות  הנובעות למען יצירת מערכות יחסים בריאות יותר בכל תחומי חיינו. </p>
+			</div>
+		</div>
+
+		<div id='toolbar'>
+			<div id="buttonjoin"><a class="hand" onmouseover="hover(5)" onmouseout="hover(5)" onclick="change('join-form')"><img src="button-join.png" border="0" /></a></div>
+			<div id="buttonabout"><a class="hand" onmouseover="hover(4)" onmouseout="hover(4)" onclick="change('about')"><img src="button-about.png" border="0" /></a></div>
+			<div id="buttonlogin"><a class="hand" onmouseover="hover(3)" onmouseout="hover(3)" href="http://hakaveret.org.il/user"><img src="button-login.png" border="0" /></a></div>
+			<div id="buttonfacebook"><a class="hand" onmouseover="hover(2)" onmouseout="hover(2)" href="http://www.facebook.com/pages/%D7%94%D7%9B%D7%95%D7%95%D7%A8%D7%AA/255386507852131"><img src="button-facebook.png" border="0" /></a></div>
+			<div id="buttonseparator"><img src="f+t.png" border="0" /></div>
+			<div id="buttontweeter"><a class="hand" onmouseover="hover(1)" onmouseout="hover(1)" href="https://twitter.com/share" class="twitter-share-button" data-lang="fr" data-count="none"><img src="button-tweeter.png" border="0" /></a></div>
+		</div>
+
+		<div id='logo' class="hand" onclick="location.href='http://hakaveret.org.il';"></div>
+		
+		<div id='slogan'></div>
+
+		<img id="kaveretbg" src="trans.gif" width="1024" height="703" border="0" onclick="reset()" usemap="#inner" />
+
+		<div id="star"></div>
+
+		<div id="kaveretbg-yellow" width="1024" height="703" border="0"></div>
+		<div id="kaveretbg-blue" width="1024" height="703" border="0"></div>
+		<div id="kaveretbg-red" width="1024" height="703" border="0"></div>
+		<div id="kaveretbg-orange" width="1024" height="703" border="0"></div>
+
+		<img id="inner-big" src="newcube.png" width="213" height="230" alt="" border="0" usemap="#innerbigmap" />
+		<map name="innerbigmap">
+			<area class="hand" shape="poly" coords="95,211,95,104,188,55,188,159" onmouseover="hover('inner-right', 'show')" onmouseout="hover('inner-right', 'hide')" onclick="change('right')" />
+			<area class="hand" shape="poly" coords="2,53,95,105,188,53,95,2" onmouseover="hover('inner-top', 'show')" onmouseout="hover('inner-top', 'hide')" onclick="change('top')" />
+			<area class="hand" shape="poly" coords="1,53,93,106,93,210,2,160" onmouseover="hover('inner-left', 'show')" onmouseout="hover('inner-left', 'hide')" onclick="change('left')" />
+		</map>
+
+		<img id="innerlines" src="small-lines.png" width="72" height="82" border="0" alt="" border="0" />
+		<img id="inner" src="inner-hide.png" width="99" height="113" border="0" alt="" border="0" usemap="#innersmallmap" />
+		<map name="innersmallmap">
+			<area class="hand" shape="poly" coords="2,28,50,55,49,112,2,85" onmouseover="hover('inner-left', 'show')" onmouseout="hover('inner-left', 'hide')" onclick="change('left')" />
+			<area class="hand" shape="poly" coords="3,28,49,2,96,29,50,54" onmouseover="hover('inner-top', 'show')" onmouseout="hover('inner-top', 'hide')"  onclick="change('top')" />
+			<area class="hand" shape="poly" coords="50,111,96,85,96,30,51,55" onmouseover="hover('inner-right', 'show')" onmouseout="hover('inner-right', 'hide')"  onclick="change('right')" />
+		</map>
+
+		<div id='xtop-left'></div>
+	</div>
+
+
+
+
+</BODY></HTML>

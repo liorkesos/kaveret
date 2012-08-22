@@ -1,0 +1,12 @@
+name = Decisions
+description = "An advanced voting module that includes plurarity voting, instant-runoff voting, and electoral lists."
+dependencies[] = votingapi
+package = Voting
+core = 6.x
+
+; Information added by drupal.org packaging script on 2012-02-02
+version = "6.x-1.8"
+core = "6.x"
+project = "decisions"
+datestamp = "1328226520"
+

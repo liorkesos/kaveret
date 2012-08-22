@@ -1,0 +1,30 @@
+<?php
+class StormteamTestCase extends DrupalWebTestCase {
+
+  public static function getInfo() {
+    return array(
+      'name' => t('Storm Team Functionality'),
+      'description' => t('Test the functionality of the Storm Team module'),
+      'group' => 'Storm',
+    );
+  }
+
+  public function setUp() {
+    parent::setUp('storm', 'stormattribute', 'stormorganization', 'stormperson', 'stormteam');
+  }
+
+  public function testStormteamCreate() {
+    // Create and login user
+    $user = $this->drupalCreateUser(array('Storm team: add', 'Storm team: view all', 'Storm person: add', 'Storm person: view all'));
+    $this->drupalLogin($user);
+
+    // Create a team
+    $team = array(
+      'title' => $this->randomName(32),
+    );
+
+    $this->drupalPost('node/add/stormteam', $team, t('Save'));
+
+    $this->assertText(t('Team @title has been created.', array('@title' => $team['title'])));;
+  }
+}

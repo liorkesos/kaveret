@@ -1,0 +1,81 @@
+/* put your custom CSS in here */
+body {
+    background: none repeat scroll 0 0 blue;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;
+}
+div.container {
+    background-color: #FFFFFF;
+}
+.col-left {
+    background-color: #F3F3FD;
+}
+#main {
+    background-color: #6B99B1;
+}
+ul.menu li {
+    list-style-image: none;
+    list-style-type: none;
+}
+.col-left ul.menu li.expanded a{
+    /*background-color: #BCDAE9;*/
+}
+.col-left ul.menu li.expanded ul {
+    padding: 0;
+}
+#block-commons_core-header_login {
+    display: none;
+}
+#block-menu-menu-merkaz-kayamut-top ul li{
+    display: inline-block;
+    list-style-image: none;
+}
+#header {
+    background: url("../image/top2.gif") no-repeat left top #fff;
+}
+.og-context-419 #block-views-user_meta-block_1 {
+    display: none;
+}
+ul.menu {
+    margin: 0;
+}
+ul li.expanded {
+    background-color: #BCDAE9;
+}
+ul li.expanded a {
+    color: #6C1A13;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0 10px;
+}
+ul li.expanded ul li {
+    background-color: #6B99B1;
+}
+ul li.expanded ul li a {
+    color: #FFFFFF;
+    display: block;
+    font-size: 12px;
+    font-weight: normal;
+    text-decoration: none;
+}
+#block-menu-menu-merkaz-kayamut-top {
+    margin-top: 100px;
+}
+#block-menu-menu-merkaz-kayamut-top ul li {
+    text-align: center;
+    width: 100px;
+}
+#block-menu-menu-merkaz-kayamut-top ul li a{
+    color: #DF4D12;
+    font-weight: bold;
+    text-decoration: none;
+}
+h1.page-title {
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 0 20px;
+    background: url("../image/top_right.gif") right top no-repeat #79B7D6;
+    line-height: 27px;
+}

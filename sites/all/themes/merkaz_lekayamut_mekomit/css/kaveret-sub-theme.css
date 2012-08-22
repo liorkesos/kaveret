@@ -1,0 +1,25 @@
+/* shahar, 
+a sub-theme for meira hanson
+2012-02-25
+*/
+
+#page {
+    background: none repeat scroll 0 0 #E3E9F7;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 100%;
+}
+#main {
+    background-color: #F3F3FD;
+}
+#sidebar-first {
+    background-color: #F3F3FD;
+}
+#main {
+    background-color: #6B99B1;
+}
+#sidebar-first ul.menu li.expanded a{
+    background-color: #BCDAE9;
+}
+#sidebar-first ul.menu li.expanded ul {
+    padding: 0;
+}

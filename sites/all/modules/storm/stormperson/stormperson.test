@@ -1,0 +1,33 @@
+<?php
+class StormpersonTestCase extends DrupalWebTestCase {
+
+  public static function getInfo() {
+    return array(
+      'name' => 'Storm Person functionality',
+      'description' => 'Test the functionality of the Storm 
+Person module',
+      'group' => 'Storm',
+    );
+  }
+
+  public function setUp() {
+    parent::setUp('storm', 'stormattribute', 'stormorganization', 'stormperson');
+    $privileged_user = $this->drupalCreateUser(array('Storm organization: add', 'Storm organization: view all', 'Storm person: add'));
+    $this->drupalLogin($privileged_user);
+  }
+
+  public function testStormpersonCreate() {
+    $org = array(
+      'title' => $this->randomName(32),
+      'body' => $this->randomName(64),
+    );
+    $person = array(
+      'title' => $this->randomName(32),
+      'body' => $this->randomName(64),
+    );
+
+    $this->drupalPost('node/add/stormorganization', $org, t('Save'));
+    $this->drupalPost('node/add/stormperson', $person, t('Save'));
+    $this->assertText(t('Person @title has been created.', array('@title' => $person['title'])));
+  }
+}

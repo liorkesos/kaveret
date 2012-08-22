@@ -1,0 +1,62 @@
+<?php
+// $Id$
+
+require_once(dirname(__FILE__).'/envolve_api_client.php');
+
+function envolve_chat_perm() {
+    return array('chat with envolve');
+}
+
+function envolve_chat_admin() {
+  $form = array();
+
+  $form['envolve_chat_api_key'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Envolve API Key'),
+    '#default_value' => variable_get('envolve_chat_api_key', ''),
+    '#size' => 50,
+    '#maxlength' => 50,
+    '#description' => t("Get your API key by registering at <a href=\"http://www.envolve.com/sign-up-and-price\">Envolve's website.</a>"),
+    '#required' => TRUE,
+  );
+
+  return system_settings_form($form);
+}
+
+function envolve_chat_menu() {
+
+  $items = array();
+
+  $items['admin/settings/envolve_chat'] = array(
+    'title' => 'Envolve Chat',
+    'description' => 'Setup your Envolve Online Chat module.',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('envolve_chat_admin'),
+    'access arguments' => array('access administration pages'),
+    'type' => MENU_NORMAL_ITEM,
+   );
+
+  return $items;
+}
+
+function envolve_chat_footer($main = 0)
+{
+	global $user;
+	$envapikey = variable_get('envolve_chat_api_key', '');
+	$displayChat = user_access('chat with envolve');
+
+	if($displayChat)
+	{
+		//check if the user is logged in
+		if($user->uid)
+		{
+			$isAdmin = user_access('administer');
+			return envapi_get_html_for_reg_user($envapikey, $user->name, NULL, NULL, $isAdmin);
+		}
+		else 
+		{
+			return envapi_get_code_for_anon_user($envapikey);
+		}
+	}
+	return '';
+}

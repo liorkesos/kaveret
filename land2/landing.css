@@ -1,0 +1,346 @@
+
+body { 
+	background-color: 787878;
+	color: 787878;
+	font-family: Arial, Sans, Sans Serif;
+}
+
+#about,
+#left-hive,
+#right-hive,
+#top-hive,
+#george,
+#inner,
+#inner-big,
+#join-form,
+#kaveretbg,
+#kaveretbg-blue,
+#kaveretbg-orange,
+#kaveretbg-red,
+#kaveretbg-yellow,
+#logo, 
+#shadow-left,
+#shadow-right,
+#shadow-top,
+#slogan, 
+#innerlines,
+#center
+#star, 
+#white-header
+#tooltip-left,
+#tooltip-right,
+#tooltip-top,
+#top-left, 
+#toolbar { 
+	position: absolute;
+}
+
+#toolbar { 
+	xbackground: url('toolbar.png') no-repeat;
+	width: 274px;
+	height: 28px;
+	top: 4px;
+	left: 411px;
+	z-index: 90;
+	xbackground-color: yellow;
+}
+
+#main {
+	margin: 0 auto;
+	position: relative;
+	width: 1024px;
+}
+
+#kaveretbg,
+#kaveretbg-yellow,
+#kaveretbg-blue,
+#kaveretbg-red,
+#kaveretbg-orange {
+	width: 1024px;
+	height: 950px;
+	top: 0px;
+	left: 0px;
+	z-index: -2;
+	background-repeat: no-repeat;
+	background-color: transparent;
+}
+
+#kaveretbg {background: transparent; z-index: 1;} 
+
+/* default z-index: */
+#kaveretbg-orange { background-image: url('orange-bg.jpg'); z-index: -1;} // initial!
+#kaveretbg-yellow { background-image: url('yellow-bg.jpg'); z-index: -1;}
+#kaveretbg-blue { background-image: url('blue-bg.jpg'); z-index: -2;}
+#kaveretbg-red { background-image: url('red-bg.jpg'); z-index: -2;}
+
+#white-header {
+	width: 1024px;
+	height: 82px;
+	top: 0;
+	left: 0px;
+	z-index: 50;
+	background-repeat: no-repeat;
+	background-color: transparent;
+	background-image: url('whiteheader.png')
+	}
+
+#buttonjoin { width: 47px ; height: 24px ; top: 10px; left: 100px; position: absolute; z-index: 2;}
+#buttonabout {width: 47px ; height: 24px ; top: 22px; left: 218px; position: absolute; z-index: 1;}
+#buttonlogin { width: 47px ; height: 24px ; top: 22px; left: 150px; position: absolute;  z-index: 0; }
+#buttonfacebook { width: 8px ; height: 15px ; top:26px ; left: 100px; position: absolute; z-index: 0;}
+#buttonseparator { width: 275px ; height: 22px ; top:20px ; left: 0px; position: absolute; z-index: 0;}
+#buttontweeter { width: 19px ; height: 13px ; top: 28px; left: 26px; position: absolute; z-index: 0;}
+
+
+
+#inner-big {
+	xwidth: 212px;
+	xheight: 229px;
+	top: 295px;
+	left: 415px;
+	z-index: 40;
+	debug-background-color: red;
+}
+
+
+#inner {
+	width: 99px;
+	height: 113px;
+	top: 347px;
+	left: 465px;
+	z-index: 20;
+	xdisplay: none;
+	debug-background-color: red;
+}
+#innerlines {
+	width: 72px ;
+	height: 82px ;
+	top: 375px;
+	left: 476px;
+	z-index: 19;
+}
+	
+center {
+	width: 96px ;
+	height: 111px ;
+	top: 375px;
+	left: 476px;
+	z-index: 30;
+	}
+	
+.titre { color: darkred; size: 16pt; font-weight: bold; margin: 6px 0 12px;}
+.bigp{ color: darkred; size: 16pt; font-weight: bold; margin: 6px 0 12px;}
+
+#join-form {
+	width: 360px;
+	xheight: 120px;
+	top: 110px;
+	left: 332px;
+	z-index: 99;
+	background-image: url() no-repeat;
+}
+
+#george {
+	display: block;
+	height: 3px;
+	left: 5px;
+	overflow: hidden;
+	top: 5px;
+	width: 3px;
+	z-index: -55;
+}
+
+#about, #join-form {
+	padding: 1px;
+	z-index: 99;
+	display: none;
+	direction: rtl;
+	overflow: hidden;
+	background-color: white;
+	font-size: 100%;
+}
+
+#about {
+	width: 500px;
+	height: 510px;
+	top: 140px;
+	left: 262px;
+	background-image: url() no-repeat;
+}
+
+#innerabout {
+	width: 450px;
+	height: 430px;
+	font-size: 16px;
+	line-height: 120%;
+}
+
+#innerabout, #inner-join {
+	padding: 20px;
+	xborder: 1px dashed gray;
+}
+
+#inner-join {
+	padding: 15px;
+}
+
+
+p { margin-top: 0.6em; }
+
+
+#shadow-top,
+#shadow-left,
+#shadow-right {
+	width: 284px;
+	height: 286px;
+	z-index: 5;
+	display: none;
+}
+#shadow-top {	top: 102px; left: 371px; background: url('shadow-top.png') no-repeat transparent; }
+#shadow-left {	top: 350px; left: 228px; background: url('shadow-left.png') no-repeat transparent; }
+#shadow-right {	top: 350px; left: 513px; background: url('shadow-right.png') no-repeat transparent; }
+
+#star {	
+	top: 140px;
+	left: 240px;
+	width: 577px;
+	height: 577px;
+	z-index: 4;
+	display: none;
+	background: url('star.png') no-repeat transparent;
+}
+
+#top-left {
+	background: url('top-left.png') no-repeat transparent;
+	width: 62px;
+	height: 120px;
+	top: 0;
+	left: 0px;
+}
+
+#logo { 
+	background: url('logo.png') no-repeat transparent;
+	width: 201px;
+	height: 49px;
+	top: 12px;
+	right: 25px;
+	cursor: pointer;
+	z-index: 99;
+}
+
+area:hover, .hand:hover, #logo:hover {
+	cursor: pointer;
+}
+a, area, img, #logo {
+	outline: none;
+	cursor: hand;
+}
+
+#slogan { 
+	background: url('slogan.png') no-repeat;
+	width: 328px;
+	height: 62px;
+	top: 14px;
+	left: 25px;
+}
+
+#left-hive,
+#right-hive,
+#top-hive {
+	z-index: 20;
+	display: none;
+}
+#top-hive {
+	height: 295px;
+	width: 303px;
+	left: 369px;
+	top: 101px;
+	background: url('top-hive.png') no-repeat transparent;
+}
+#left-hive {
+	height: 296px;
+	width: 303px;
+	left: 227px;
+	top: 349px;
+	background: url('left-hive.png') no-repeat transparent;
+}
+#right-hive {
+	height: 298px;
+	width: 305px;
+	left: 509px;
+	top: 347px;
+	background: url('right-hive.png') no-repeat transparent;
+}
+
+
+#tooltip-top,
+#tooltip-left,
+#tooltip-right {
+	overflow: hidden; /* scroll; */
+	z-index: 91;
+	display: none;
+	direction: rtl; 
+	text-align: right;
+	font-size: 14px;
+}
+#tooltip-top {
+	height: 350px; /* incl. padding = 352px; */
+	width: 200px; /* incl. padding = 276px; 276-48-7 */
+	left: 640px;
+	top: 200px;
+	font-size: 14px;
+	line-height: 120%;
+	background: url('tooltip-top-crop.png') no-repeat  transparent;
+	padding-left: 50px;
+	padding-top: 5px;
+	padding-right: 15px;
+	padding-bottom: 50px;
+}
+
+#tooltip-left {
+	height: 34px; /* incl. padding = 207px; */
+	width: 242px; /* incl. padding = 423px; */
+	left: 300px;
+	top: 160px;
+	font-size: 14px;
+	line-height: 120%;
+	background: url('tooltip-left-crop.png') no-repeat  transparent;
+	padding-left: 28px;
+	padding-top: 3px;
+	padding-right: 175px;
+	padding-bottom: 195px;
+}
+
+#tooltip-right {
+	height: 151px; /* incl. padding = 201px; */
+	width: 255px; /* incl. padding = 367px; */
+	left: 350px;
+	top: 160px;
+	font-size: 14px;
+	line-height: 120%;
+	background: url('tooltip-right-crop.png') no-repeat  transparent;
+	padding-left: 100px;
+	padding-top: 6px;
+	padding-right: 7px;
+	padding-bottom: 47px;
+}
+
+.frm td { 
+	padding: 5px; 
+	direction: rtl; 
+	text-align: right;
+}
+
+#join-submit {
+	height: 30px; 
+	width: 84px;
+	margin-right: 20px;
+	xborder: 0; 
+	background: url('register.png') no-repeat transparent;
+}
+
+.nameinput {	
+	color: gray;
+	font-style:italic;
+	italic: true;
+}

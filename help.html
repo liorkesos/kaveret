@@ -1,0 +1,31 @@
+Drush provides an extensive help system that describes both drush commands and topics of
+general interest.  Use `drush help --filter` to present a list of command categories to
+view, and `drush topic` for a list of topics that go more in-depth on how to use and
+extend drush.
+
+Examples:
+ drush                                     List all commands.                        
+ drush --filter=devel_generate             Show only commands defined in             
+                                           devel_generate.drush.inc                  
+ drush help pm-download                    Show help for one command.                
+ drush help dl                             Show help for one command using an alias. 
+
+
+Arguments:
+ command                                   A command name, or command alias. 
+
+
+Options:
+ --sort                                    Sort commands in alphabetical order. drush   
+                                           waits for full bootstrap before printing any 
+                                           commands when this option is used.           
+ --filter                                  Restrict command list to those commands      
+                                           defined in the specified file.               
+ --html                                    Print help for all commands in HTML format.  
+ --pipe                                    A list of available commands, one per line.  
+
+
+Topics:
+ docs-readme                               README.txt 
+
+

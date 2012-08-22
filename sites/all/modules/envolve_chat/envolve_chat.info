@@ -1,0 +1,5 @@
+; $Id$
+name = Envolve Chat
+description = This module adds Envolve's chat toolbar to your website.
+core = 6.x
+

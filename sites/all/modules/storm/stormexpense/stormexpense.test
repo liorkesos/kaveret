@@ -1,0 +1,47 @@
+<?php
+class StormexpenseTestCase extends DrupalWebTestCase {
+
+  public static function getInfo() {
+    return array(
+      'name' => t('Storm Expense Functionality'),
+      'description' => t('Test the functionality of the Storm Expense module'),
+      'group' => 'Storm',
+    );
+  }
+
+  public function setUp() {
+    parent::setUp('storm', 'stormattribute', 'stormorganization', 'stormproject', 'stormtask', 'stormticket', 'stormexpense');
+  }
+
+  public function testStormexpenseCreate() {
+    // Create and login user
+    $user = $this->drupalCreateUser(array('Storm organization: add', 'Storm organization: view all', 'Storm expense: add', 'Storm expense: view all', 'Storm project: view all', 'Storm task: view all'));
+    $this->drupalLogin($user);
+
+    // Create a team
+    $org = array(
+      'title' => $this->randomName(32),
+    );
+
+    $expense = array(
+      'organization_nid' => '1',
+      'title' => $this->randomName(32),
+    );
+
+    $this->drupalPost('node/add/stormorganization', $org, t('Save'));
+
+    $this->drupalPost('node/add/stormexpense', $expense, t('Save'));
+
+    $this->assertText(t('Expense @title has been created.', array('@title' => $expense['title'])));
+  }
+
+  public function testStormexpenseReports() {
+    // Create and login user
+    $user = $this->drupalCreateUser(array('Storm expense: access'));
+    $this->drupalLogin($user);
+
+    // Create a team
+    $this->drupalGet('storm/expenses/report/std/en');
+  }
+}
+
