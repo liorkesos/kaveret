@@ -32,12 +32,12 @@
      
       <?php print $header; ?>
      
-	  <a href="http://www.hakaveret.org.il/"  target="_blank"><div id="hakaveret-logo" ></div></a>
+	 
       <a href="http://www.greenchange.co.il/"  target="_blank"><div id="shinoy" ></div></a>
 	  <div id="top-icons">
 		  <ul>
-			  <a href="http://www.favebook.com/"  target="_blank"><li id="sprite-facebook" >facebook</li></a>
-			  <a href="https://twitter.com//"  target="_blank"><li id="sprite-twitter" >twitter</li></a>
+			  <a href="http://www.facebook.com/"  target="_blank"><li id="sprite-facebook" >facebook</li></a>
+			 
 			  <a href="http://www.youtube.com/"  target="_blank"><li id="sprite-youtube" >youtube</li></a>
 		  </ul>
 	 </div>	
