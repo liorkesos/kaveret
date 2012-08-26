@@ -28,17 +28,15 @@
 
 <div class="container">
   <div id="header" class="span-24">
-    <a href="http://hakaveret.org.il/node/965"><div id="hecshel-logo"></div></a>
-     
+<a href="http://hakaveret.org.il/node/965"><div id="hecshel-logo"></div></a>
       <?php print $header; ?>
-     
-	  <a href="http://www.hakaveret.org.il/"  target="_blank"><div id="hakaveret-logo" ></div></a>
       <a href="http://www.greenchange.co.il/"  target="_blank"><div id="shinoy" ></div></a>
-	  <div id="top-icons">
-		  <ul>
-			  <a href="http://www.favebook.com/"  target="_blank"><li id="sprite-facebook" >facebook</li></a>
-			  <a href="https://twitter.com//"  target="_blank"><li id="sprite-twitter" >twitter</li></a>
-			  <a href="http://www.youtube.com/"  target="_blank"><li id="sprite-youtube" >youtube</li></a>
+<div id="top-icons"><ul>
+<a href="http://www.facebook.com/HeschelCenter"  target="_blank">
+<li id="sprite-facebook" >facebook</li></a>
+	<a href="http://www.youtube.com/user/theheschelcenter?feature=results_main"  target="_blank">
+<li id="sprite-youtube" >youtube</li>
+</a>
 		  </ul>
 	 </div>	
       <?php if ($search_box): ?>
