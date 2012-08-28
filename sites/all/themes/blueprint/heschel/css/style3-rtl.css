@@ -5,17 +5,17 @@ body {
     font-size: 12px;
 }
 
-a
-{
+a{
   text-decoration: none;
 }
+
 
 #hecshel-logo {
   background:url("../image/heschel-logo-big.png") no-repeat 9px 16px;
   height: 159px;
   width: 180px;
   margin: 2px 0 0;
-  float: left;
+  float: right;
 }
 #hakaveret-logo {
    background:url("../image/hakaveret.png") no-repeat 0 0;
@@ -26,14 +26,13 @@ a
 }
 #shinoy {
 	background: url("../image/shinui-logo.png") no-repeat scroll 0 0 transparent;
-	float: right;
+	float: left;
 	height: 37px;
-	margin: 0 15px 0 0px;
+	margin: 0 0 0 18px;
 	width: 172px;
 }
 #top-icons {
-float: right;
-margin: 10px -3px 45px;
+  float: left;
 }
 #top-icons ul li{
   background: url( "../image/top-icons.png") no-repeat top left;
@@ -78,13 +77,13 @@ div.form-item {
 
 /* menu */
 #block-menu-menu-hecshel-menu {
-    float: left;    
+    float: right;    
 }
 #block-menu-menu-hecshel-menu ul{
    margin: 115px 0px 0 0px;
 }
 #block-menu-menu-hecshel-menu li{
-   float: left;
+   float: right;
    text-align: center;
    position: relative;
    padding: 0 0 15px;
@@ -106,13 +105,20 @@ div.form-item {
 }
 #block-menu-menu-hecshel-menu li a#heschel-about{
   background: #b3003d;
-  -webkit-border-top-left-radius: 5px;
-  -webkit-border-bottom-left-radius: 5px;
-  -moz-border-radius-topleft: 5px;
-  -moz-border-radius-bottomleft: 5px;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
-  border-left: none;
+  -webkit-border-top-right-radius: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+  -moz-border-radius-topright: 5px;
+  -moz-border-radius-bottomright: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-right: none;
+
+  -webkit-border-top-left-radius: 0px;
+  -webkit-border-bottom-left-radius: 0px;
+  -moz-border-radius-topleft: 0px;
+  -moz-border-radius-bottomleft: 0px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
 }
 #block-menu-menu-hecshel-menu li:hover a#heschel-about{
   background: #c90145;
@@ -143,12 +149,19 @@ div.form-item {
 }
 #block-menu-menu-hecshel-menu li a#heschel-english{
   background: #e4d621;
-  -webkit-border-top-right-radius: 5px;
-  -webkit-border-bottom-right-radius: 5px;
-  -moz-border-radius-topright: 5px;
-  -moz-border-radius-bottomright: 5px;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
+  -webkit-border-top-left-radius: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  -moz-border-radius-topleft: 5px;
+  -moz-border-radius-bottomleft: 5px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+
+  -webkit-border-top-right-radius: 0px;
+  -webkit-border-bottom-right-radius: 0px;
+  -moz-border-radius-topright: 0px;
+  -moz-border-radius-bottomright: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
 }
 /* End of menu */
 body .container .span-12 {
@@ -590,4 +603,3 @@ table#attachments,
 .book-navigation {
     display:none;
 }
-
