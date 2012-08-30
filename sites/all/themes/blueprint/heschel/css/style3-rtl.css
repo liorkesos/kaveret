@@ -5,17 +5,17 @@ body {
     font-size: 12px;
 }
 
-a
-{
+a{
   text-decoration: none;
 }
+
 
 #hecshel-logo {
   background:url("../image/heschel-logo-big.png") no-repeat 9px 16px;
   height: 159px;
   width: 180px;
   margin: 2px 0 0;
-  float: left;
+  float: right;
 }
 #hakaveret-logo {
    background:url("../image/hakaveret.png") no-repeat 0 0;
@@ -26,14 +26,13 @@ a
 }
 #shinoy {
 	background: url("../image/shinui-logo.png") no-repeat scroll 0 0 transparent;
-	float: right;
+	float: left;
 	height: 37px;
-	margin: 0 15px 0 0px;
+	margin: 0 0 0 18px;
 	width: 172px;
 }
 #top-icons {
-float: right;
-margin: 10px -3px 45px;
+  float: left;
 }
 #top-icons ul li{
   background: url( "../image/top-icons.png") no-repeat top left;
@@ -50,7 +49,6 @@ margin: 10px -3px 45px;
 #search-box {
   float: right;
   padding: 0px 28px 0 0;
-  margin-top: -4px;
 }
 div.form-item {
     margin-bottom: 0.2em;
@@ -74,21 +72,18 @@ div.form-item {
     width: 113px;
     border: none;
     margin: 0;
-    float: right;
-
 }
 
 
 /* menu */
 #block-menu-menu-hecshel-menu {
-    float: left;   
-    
+    float: right;    
 }
 #block-menu-menu-hecshel-menu ul{
    margin: 115px 0px 0 0px;
 }
 #block-menu-menu-hecshel-menu li{
-   float: left;
+   float: right;
    text-align: center;
    position: relative;
    padding: 0 0 15px;
@@ -110,13 +105,20 @@ div.form-item {
 }
 #block-menu-menu-hecshel-menu li a#heschel-about{
   background: #b3003d;
-  -webkit-border-top-left-radius: 5px;
-  -webkit-border-bottom-left-radius: 5px;
-  -moz-border-radius-topleft: 5px;
-  -moz-border-radius-bottomleft: 5px;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
-  border-left: none;
+  -webkit-border-top-right-radius: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+  -moz-border-radius-topright: 5px;
+  -moz-border-radius-bottomright: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-right: none;
+
+  -webkit-border-top-left-radius: 0px;
+  -webkit-border-bottom-left-radius: 0px;
+  -moz-border-radius-topleft: 0px;
+  -moz-border-radius-bottomleft: 0px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
 }
 #block-menu-menu-hecshel-menu li:hover a#heschel-about{
   background: #c90145;
@@ -147,12 +149,19 @@ div.form-item {
 }
 #block-menu-menu-hecshel-menu li a#heschel-english{
   background: #e4d621;
-  -webkit-border-top-right-radius: 5px;
-  -webkit-border-bottom-right-radius: 5px;
-  -moz-border-radius-topright: 5px;
-  -moz-border-radius-bottomright: 5px;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
+  -webkit-border-top-left-radius: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  -moz-border-radius-topleft: 5px;
+  -moz-border-radius-bottomleft: 5px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+
+  -webkit-border-top-right-radius: 0px;
+  -webkit-border-bottom-right-radius: 0px;
+  -moz-border-radius-topright: 0px;
+  -moz-border-radius-bottomright: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
 }
 /* End of menu */
 body .container .span-12 {
@@ -320,19 +329,19 @@ ul.menu li {
 }
 .heschel-homepage {
   position: relative;
-  left: -10px;
+  right: -10px;
   width: 768px;
   float: right;
 }
 .heschel-not-homepage {
 border-left: 1px solid #D1C9B9;
 border-right: 1px solid #D1C9B9;
-float: left;
+float: right;
 font-size: 16px;
 margin: 20px 0 17px 20px;
 padding: 0 75px 0 40px;
 position: relative;
-right: -160px;
+right: -10px;
 width: 463px;
 }
 .heschel-not-homepage h1.page-title {
@@ -403,13 +412,13 @@ margin: 0;
 }
 .views-field-field-short-desc-value p {
   
-
+   
 }
 
 .view-small-heschel-slideshow .views_slideshow_next {
     background: url("../image/small_slideshow_arrow.png") no-repeat scroll right top transparent;
     float: right;
-    left:216px ;
+    right: 7px;
     height: 34px;
     position: absolute;
     text-indent: -9999px;
@@ -422,7 +431,7 @@ margin: 0;
     background: url("../image/small_slideshow_arrow.png") no-repeat scroll left top transparent;
     height: 34px;
     position: absolute;
-    left: 7px;
+    right: 216px;
     text-indent: -9999px;
     top: 50px;
     width: 26px;
@@ -442,7 +451,7 @@ margin: 0;
 }
 .heschel-right .views_slideshow_next {
     top: 106px;
-left: 119px;
+
 }
 
 #block-block-19 h2 {
@@ -508,8 +517,7 @@ h1.page-title {
 .heschel-right {
 /*  border: 1px solid red;  */ 
 width: 153px; 
-float: right;
-margin-right: 24px;
+margin-right: 0px;
 }
 
 .span-5 {
