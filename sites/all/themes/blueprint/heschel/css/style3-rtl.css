@@ -517,7 +517,7 @@ h1.page-title {
 .heschel-right {
 /*  border: 1px solid red;  */ 
 width: 153px; 
-float: right;
+margin-right: 0px;
 }
 
 .span-5 {
