@@ -99,7 +99,7 @@ div.form-item {
     border-right: 1px solid;
   
 }
-/* menu colors  */
+/* menu colors*/  
 #block-menu-menu-hecshel-menu ul li.expanded {
     background-color: #fff;
 }
@@ -120,6 +120,7 @@ div.form-item {
   border-top-left-radius: 0px;
   border-bottom-left-radius: 0px;
 }
+/*
 #block-menu-menu-hecshel-menu li:hover a#heschel-about{
   background: #c90145;
 }
@@ -146,7 +147,7 @@ div.form-item {
 }
 #block-menu-menu-hecshel-menu li:hover a#donations{
   background: #776320; 
-}
+}*/
 #block-menu-menu-hecshel-menu li a#heschel-english{
   background: #e4d621;
   -webkit-border-top-left-radius: 5px;
