@@ -17,6 +17,10 @@ a
   margin: 2px 0 0;
   float: left;
 }
+.heschel_sub_logo{
+	margin-top: -20px;
+	margin-left: 8px;
+}
 #hakaveret-logo {
    background:url("../image/hakaveret.png") no-repeat 0 0;
    width: 73px;
@@ -24,6 +28,7 @@ a
    margin: 17px 0 0 21px;
    float: left;
 }
+
 #shinoy {
 	background: url("../image/shinui-logo.png") no-repeat scroll 0 0 transparent;
 	float: right;
