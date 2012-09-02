@@ -13,7 +13,8 @@
  *   $db_url = 'mysqli://username:password@localhost/databasename';
  *   $db_url = 'pgsql://username:password@localhost/databasename';
  */
-$db_url = 'mysqli://commons-t:hzBaR6qfW@127.0.0.1:3306/commons-t';
+//$db_url = 'mysqli://commons-t:hzBaR6qfW@127.0.0.1:3306/commons-t';
+$db_url = 'mysqli://commons-t:busybee@127.0.0.1:3306/commons-t';
 $db_prefix = '';
 
 /**
