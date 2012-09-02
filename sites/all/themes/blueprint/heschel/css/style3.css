@@ -33,12 +33,12 @@ a
 	background: url("../image/shinui-logo.png") no-repeat scroll 0 0 transparent;
 	float: right;
 	height: 37px;
-	margin: 0 15px 0 0px;
+	margin: 0 7px 0 0px;
 	width: 172px;
 }
 #top-icons {
 float: right;
-margin: 10px -3px 45px;
+margin: 10px -11px 45px;
 }
 #top-icons ul li{
   background: url( "../image/top-icons.png") no-repeat top left;
@@ -54,8 +54,8 @@ margin: 10px -3px 45px;
 
 #search-box {
   float: right;
-  padding: 0px 28px 0 0;
-  margin-top: -4px;
+margin-top: 0px;
+margin-right: 14px;
 }
 div.form-item {
     margin-bottom: 0.2em;
@@ -328,16 +328,17 @@ ul.menu li {
   left: -10px;
   width: 768px;
   float: right;
+  top: -17px;
 }
 .heschel-not-homepage {
 border-left: 1px solid #D1C9B9;
 border-right: 1px solid #D1C9B9;
-float: left;
+float:  left;
 font-size: 16px;
-margin: 20px 0 17px 20px;
+margin: 20px 20px 17px 0px;
 padding: 0 75px 0 40px;
 position: relative;
-right: -160px;
+left: -10px;
 width: 463px;
 }
 .heschel-not-homepage h1.page-title {
@@ -514,7 +515,7 @@ h1.page-title {
 /*  border: 1px solid red;  */ 
 width: 153px; 
 float: right;
-margin-right: 24px;
+margin-right: 14px;
 }
 
 .span-5 {

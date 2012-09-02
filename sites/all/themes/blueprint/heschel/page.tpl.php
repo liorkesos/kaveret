@@ -65,9 +65,9 @@
 	 // $t = print_r($node);  
 	  
 	 // die($t);  // $tabs != ''
-      //if (  $user->uid == 1  ) {
+    if (  $user->uid == 1  ) {
         print '<div class="tabs">'. $tabs .'</div>';
-      //}
+    }
 
       if ($messages != '') {
         print '<div id="messages">'. $messages .'</div>';

@@ -25,14 +25,12 @@ a{
    float: left;
 }
 #shinoy {
-	background: url("../image/shinui-logo.png") no-repeat scroll 0 0 transparent;
 	float: left;
-	height: 37px;
-	margin: 0 0 0 18px;
-	width: 172px;
+	margin: 0 0 0 13px;
 }
 #top-icons {
   float: left;
+  margin-left: 0px;
 }
 #top-icons ul li{
   background: url( "../image/top-icons.png") no-repeat top left;
@@ -47,8 +45,9 @@ a{
 #top-icons ul li#sprite-youtube{ background: url("/sites/all/themes/blueprint/heschel/image/youtube-icon.png") no-repeat scroll 0 0 transparent; width: 27px; height: 26px; } 
 
 #search-box {
-  float: right;
-  padding: 0px 28px 0 0;
+float: left;
+margin-top: -2px;
+margin-left: 14px;
 }
 div.form-item {
     margin-bottom: 0.2em;
