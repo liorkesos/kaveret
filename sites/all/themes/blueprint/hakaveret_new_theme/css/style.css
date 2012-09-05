@@ -206,8 +206,10 @@ ul.nice-menu li ,ul.nice-menu li li , ul.nice-menu-down li.menuparent , ul.nice-
     height: 260px;
     margin: 0 0 25px;
 }
-
-
+#site_full_width #block-quicktabs-movies 
+{
+  height: 520px;
+}
 
 #site_full_width .block-quicktabs.even {
     background: #fcf0d8;
