@@ -149,6 +149,13 @@ div .block-menu-menu-hecshel-menu ul{
 .block-menu-menu-hecshel-menu li:hover a.menu_4{
   background: #dbab45;
 }
+
+#block-menu-menu-menu-for-english li a.menu_4{
+	padding: 1px 0 0px;
+	line-height: 15px;
+	font-size: 13px;
+}
+
 .block-menu-menu-hecshel-menu li a.menu_5{
   background: #626321;
 }
