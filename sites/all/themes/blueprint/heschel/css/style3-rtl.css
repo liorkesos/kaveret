@@ -75,18 +75,13 @@ div.form-item {
 
 
 /* menu */
-#block-menu-menu-hecshel-menu {
+.block-menu-menu-hecshel-menu {
     float: right;    
 }
-#block-menu-menu-hecshel-menu ul{
-   margin: 115px 0px 0 0px;
-}
-#block-menu-menu-hecshel-menu li{
+div.block-menu-menu-hecshel-menu li{
    float: right;
-   text-align: center;
-   position: relative;
-   padding: 0 0 15px;
 }
+
 #block-menu-menu-hecshel-menu li a{
     color: #FFFFFF;
     display: inline-block;
@@ -96,13 +91,10 @@ div.form-item {
     text-decoration: none;
     width: 96px;
     border-right: 1px solid;
-  
 }
-/* menu colors*/  
-#block-menu-menu-hecshel-menu ul li.expanded {
-    background-color: #fff;
-}
-#block-menu-menu-hecshel-menu li a#heschel-about{
+
+/* menu colors*/ 
+.block-menu-menu-hecshel-menu li a.menu_1{
   background: #b3003d;
   -webkit-border-top-right-radius: 5px;
   -webkit-border-bottom-right-radius: 5px;
@@ -119,35 +111,7 @@ div.form-item {
   border-top-left-radius: 0px;
   border-bottom-left-radius: 0px;
 }
-/*
-#block-menu-menu-hecshel-menu li:hover a#heschel-about{
-  background: #c90145;
-}
-#block-menu-menu-hecshel-menu li a#heschel-about-se{
-  background: #8c7751;
-}
-#block-menu-menu-hecshel-menu li:hover a#heschel-about-se{
-  background: #a0895d;
-}
-#block-menu-menu-hecshel-menu li a#heschel-what-are-we-doing{
-  background: #d55a21;
-}
-#block-menu-menu-hecshel-menu li:hover a#heschel-what-are-we-doing{
-  background: #d17347;
-}
-#block-menu-menu-hecshel-menu li a#heschel-contact-us{
-  background: #de9c0e;
-}
-#block-menu-menu-hecshel-menu li:hover a#heschel-contact-us{
-  background: #dbab45;
-}
-#block-menu-menu-hecshel-menu li a#donations{
-  background: #626321;
-}
-#block-menu-menu-hecshel-menu li:hover a#donations{
-  background: #776320; 
-}*/
-#block-menu-menu-hecshel-menu li a#heschel-english{
+.block-menu-menu-hecshel-menu li a.menu_6{
   background: #e4d621;
   -webkit-border-top-left-radius: 5px;
   -webkit-border-bottom-left-radius: 5px;
@@ -169,10 +133,10 @@ body .container .span-12 {
 	/*width: 530px;*/
 }
 
- 
-
 /* menu - drupdown */
-
+.block-menu-menu-hecshel-menu li.expanded  li{
+   text-align: right;	
+   }
 #block-menu-menu-hecshel-menu ul  li.expanded ul.menu {
     background: #FFFFFF;
     margin:15px -25px 0;
@@ -185,34 +149,17 @@ body .container .span-12 {
 	box-shadow: 0 0 9px #000;
 	width: 155px;
 	display: none;
-
 }
 #block-menu-menu-hecshel-menu ul  li.expanded:hover ul.menu{
   display: block;
-  
 }
-
-#block-menu-menu-hecshel-menu li.expanded  li{
-   float: none;
-   text-align: right;	
-   background: #fff;
-   padding: 0 22px;
-   
-
-   }
-
-#block-menu-menu-hecshel-menu li.expanded:hover{
-   background: url('../image/dropdown-arrow.png') no-repeat 50px 35px;	
-   }
 #block-menu-menu-hecshel-menu li.expanded  li a{
    color: #8c7751;
    border: none;
 }
 
-
 div.tabs {
   /*  display: none;  */
-  
 }
 
 div.container {

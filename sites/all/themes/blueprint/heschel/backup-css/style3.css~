@@ -2,12 +2,7 @@
 body {
     background: #efefef; 
     font-family: Arial,Helvetica,sans-serif;
-    font-size: 12px;
-}
-
-a
-{
-  text-decoration: none;
+    font-size: 24px;
 }
 
 #hecshel-logo {
@@ -15,11 +10,7 @@ a
   height: 159px;
   width: 180px;
   margin: 2px 0 0;
-  float: left;
-}
-.heschel_sub_logo{
-	margin-top: -20px;
-	margin-left: 8px;
+  float: right;
 }
 #hakaveret-logo {
    background:url("../image/hakaveret.png") no-repeat 0 0;
@@ -28,17 +19,16 @@ a
    margin: 17px 0 0 21px;
    float: left;
 }
-
 #shinoy {
 	background: url("../image/shinui-logo.png") no-repeat scroll 0 0 transparent;
-	float: right;
+	float: left;
 	height: 37px;
-	margin: 0 7px 0 0px;
+	margin: 0 0 0 18px;
 	width: 172px;
 }
 #top-icons {
-float: right;
-margin: 10px -11px 45px;
+  float: left;
+  margin: 10px 0 9px;
 }
 #top-icons ul li{
   background: url( "../image/top-icons.png") no-repeat top left;
@@ -48,14 +38,13 @@ margin: 10px -11px 45px;
 	width: 26px; height: 26px; 
 	overflow: hidden;
 }
-#top-icons ul li#sprite-facebook{ background: url("/sites/all/themes/blueprint/heschel/image/facebook-icon.png") no-repeat scroll 0 0 transparent; width: 27px; height: 26px; } 
-#top-icons ul li#sprite-twitter{ background: url("/sites/all/themes/blueprint/heschel/image/twitter-icon.png") no-repeat scroll 0 0 transparent; width: 27px; height: 26px; } 
-#top-icons ul li#sprite-youtube{ background: url("/sites/all/themes/blueprint/heschel/image/youtube-icon.png") no-repeat scroll 0 0 transparent; width: 27px; height: 26px; } 
+#top-icons ul li#sprite-facebook{ background-position: 0 0; width: 27px; height: 26px; } 
+#top-icons ul li#sprite-twitter{ background-position: 0 -27px; width: 27px; height: 26px; } 
+#top-icons ul li#sprite-youtube{ background-position: 0 -54px; width: 27px; height: 26px; } 
 
 #search-box {
   float: right;
-margin-top: 0px;
-margin-right: 14px;
+  padding: 0px 28px 0 0;
 }
 div.form-item {
     margin-bottom: 0.2em;
@@ -79,29 +68,23 @@ div.form-item {
     width: 113px;
     border: none;
     margin: 0;
-    float: right;
-
 }
 
 
 /* menu */
-/*block-menu-menu-menu-for-english*/
-/*for all*/
-.block-menu-menu-hecshel-menu {
-    float: left;   
+#block-menu-menu-hecshel-menu {
+    float: right;    
 }
-div .block-menu-menu-hecshel-menu ul{
+#block-menu-menu-hecshel-menu ul{
    margin: 115px 0px 0 0px;
 }
- div .block-menu-menu-hecshel-menu li{
-   float: left;
+#block-menu-menu-hecshel-menu li{
+   float: right;
    text-align: center;
    position: relative;
    padding: 0 0 15px;
 }
-/*end for all*/
-/*for english*/
-#block-menu-menu-menu-for-english div li a{
+#block-menu-menu-hecshel-menu li a{
     color: #FFFFFF;
     display: inline-block;
     font-size: 13px;
@@ -112,57 +95,55 @@ div .block-menu-menu-hecshel-menu ul{
     border-right: 1px solid;
   
 }
-/*end for english*/
-
 /* menu colors  */
-.block-menu-menu-hecshel-menu ul li.expanded {
+#block-menu-menu-hecshel-menu ul li.expanded {
     background-color: #fff;
 }
-.block-menu-menu-hecshel-menu li a.menu_1{
+#block-menu-menu-hecshel-menu li a#heschel-about{
   background: #b3003d;
-  -webkit-border-top-left-radius: 5px;
-  -webkit-border-bottom-left-radius: 5px;
-  -moz-border-radius-topleft: 5px;
-  -moz-border-radius-bottomleft: 5px;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
-  border-left: none;
-}
-.block-menu-menu-hecshel-menu li:hover a.menu_1{
-  background: #c90145;
-}
-.block-menu-menu-hecshel-menu li a.menu_2{
-  background: #8c7751;
-}
-.block-menu-menu-hecshel-menu li:hover a.menu_2{
-  background: #a0895d;
-}
-.block-menu-menu-hecshel-menu li a.menu_3{
-  background: #d55a21;
-}
-.block-menu-menu-hecshel-menu li:hover a.menu_3{
-  background: #d17347;
-}
-.block-menu-menu-hecshel-menu li a.menu_4{
-  background: #de9c0e;
-}
-.block-menu-menu-hecshel-menu li:hover a.menu_4{
-  background: #dbab45;
-}
-.block-menu-menu-hecshel-menu li a.menu_5{
-  background: #626321;
-}
-.block-menu-menu-hecshel-menu li:hover a.menu_5{
-  background: #776320; 
-}
-.block-menu-menu-hecshel-menu li a.menu_6{
-  background: #e4d621;
   -webkit-border-top-right-radius: 5px;
   -webkit-border-bottom-right-radius: 5px;
   -moz-border-radius-topright: 5px;
   -moz-border-radius-bottomright: 5px;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
+  border-right: none;
+}
+#block-menu-menu-hecshel-menu li:hover a#heschel-about{
+  background: #c90145;
+}
+#block-menu-menu-hecshel-menu li a#heschel-about-se{
+  background: #8c7751;
+}
+#block-menu-menu-hecshel-menu li:hover a#heschel-about-se{
+  background: #a0895d;
+}
+#block-menu-menu-hecshel-menu li a#heschel-what-are-we-doing{
+  background: #d55a21;
+}
+#block-menu-menu-hecshel-menu li:hover a#heschel-what-are-we-doing{
+  background: #d17347;
+}
+#block-menu-menu-hecshel-menu li a#heschel-contact-us{
+  background: #de9c0e;
+}
+#block-menu-menu-hecshel-menu li:hover a#heschel-contact-us{
+  background: #dbab45;
+}
+#block-menu-menu-hecshel-menu li a#donations{
+  background: #626321;
+}
+#block-menu-menu-hecshel-menu li:hover a#donations{
+  background: #776320; 
+}
+#block-menu-menu-hecshel-menu li a#heschel-english{
+  background: #e4d621;
+  -webkit-border-top-left-radius: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  -moz-border-radius-topleft: 5px;
+  -moz-border-radius-bottomleft: 5px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 /* End of menu */
 body .container .span-12 {
@@ -173,19 +154,8 @@ body .container .span-12 {
  
 
 /* menu - drupdown */
-/*for all*/
-.block-menu-menu-hecshel-menu li.expanded  li{
-   float: none;
-   text-align: left;	
-   background: #fff;
-   padding: 0 22px;
-   }
-.block-menu-menu-hecshel-menu li.expanded:hover{
-   background: url('../image/dropdown-arrow.png') no-repeat 50px 35px;	
-   }
-/*end for all*/
-/*for english*/
-#block-menu-menu-menu-for-english ul  li.expanded ul.menu {
+
+#block-menu-menu-hecshel-menu ul  li.expanded ul.menu {
     background: #FFFFFF;
     margin:15px -25px 0;
     z-index: 1000;
@@ -197,16 +167,31 @@ body .container .span-12 {
 	box-shadow: 0 0 9px #000;
 	width: 155px;
 	display: none;
+
 }
-#block-menu-menu-menu-for-english ul  li.expanded:hover ul.menu{
+#block-menu-menu-hecshel-menu ul  li.expanded:hover ul.menu{
   display: block;
+  
 }
 
-#block-menu-menu-menu-for-english li.expanded  li a{
+#block-menu-menu-hecshel-menu li.expanded  li{
+   float: none;
+   text-align: right;	
+   background: #fff;
+   padding: 0 22px;
+   
+
+   }
+
+#block-menu-menu-hecshel-menu li.expanded:hover{
+   background: url('../image/dropdown-arrow.png') no-repeat 50px 35px;	
+   }
+#block-menu-menu-hecshel-menu li.expanded  li a{
    color: #8c7751;
    border: none;
 }
-/*end for english*/
+
+
 div.tabs {
   /*  display: none;  */
   
@@ -326,20 +311,19 @@ ul.menu li {
 }
 .heschel-homepage {
   position: relative;
-  left: -10px;
+  right: -10px;
   width: 768px;
   float: right;
-  top: -17px;
 }
 .heschel-not-homepage {
 border-left: 1px solid #D1C9B9;
 border-right: 1px solid #D1C9B9;
-float:  left;
+float: right;
 font-size: 16px;
-margin: 20px 20px 17px 0px;
+margin: 20px 0 17px 20px;
 padding: 0 75px 0 40px;
 position: relative;
-left: -10px;
+right: -10px;
 width: 463px;
 }
 .heschel-not-homepage h1.page-title {
@@ -410,13 +394,13 @@ margin: 0;
 }
 .views-field-field-short-desc-value p {
   
-
+   
 }
 
 .view-small-heschel-slideshow .views_slideshow_next {
     background: url("../image/small_slideshow_arrow.png") no-repeat scroll right top transparent;
     float: right;
-    left:216px ;
+    right: 7px;
     height: 34px;
     position: absolute;
     text-indent: -9999px;
@@ -429,7 +413,7 @@ margin: 0;
     background: url("../image/small_slideshow_arrow.png") no-repeat scroll left top transparent;
     height: 34px;
     position: absolute;
-    left: 7px;
+    right: 216px;
     text-indent: -9999px;
     top: 50px;
     width: 26px;
@@ -449,7 +433,7 @@ margin: 0;
 }
 .heschel-right .views_slideshow_next {
     top: 106px;
-left: 119px;
+
 }
 
 #block-block-19 h2 {
@@ -516,7 +500,6 @@ h1.page-title {
 /*  border: 1px solid red;  */ 
 width: 153px; 
 float: right;
-margin-right: 14px;
 }
 
 .span-5 {
@@ -560,45 +543,5 @@ ul li, ul.menu li, .item-list ul li, li.leaf {
 
 
 .tabs {
-  /*display: none; */
-} 
-
-/* ---------- Heschel News ---------- */
-
-.heschel-news , .heschel-news a {
-  color: #8c7751;
-}
-
-
-.heschel-news h3 {
-  color: #fff;
-  background: #e69426;
-  border-radius: 5px;	
-  margin: 15px  10px;
-  padding: 5px;
-  clear: both;
-  width: 146px;
-  display: inline-block;
-
-}
-
-.view-heschel-news {
-  margin: 6px  17px 17px;
-}
-
-.view-heschel-news .views-field-title {
-  font-weight: bold;
-}
-.view-heschel-news .views-row {
-  border-bottom: 1px dashed;
-  margin: 0 0 10px;
-}
-
-.view-heschel-news p {
-  margin: 0 0 0.5em;
-}
-table#attachments,
-.node ul.links.inline,
-.book-navigation {
-    display:none;
+  display: none; 
 }
