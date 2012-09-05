@@ -28,7 +28,7 @@
 
 <div class="container">
   <div id="header" class="span-24">
-<a href="http://hakaveret.org.il/node/965"><div id="hecshel-logo"></div></a>
+<a href="<?php print $front_page; ?>/node/965"><div id="hecshel-logo"></div></a>
       <?php print $header; ?>
       <a href="http://www.greenchange.co.il/"  target="_blank"><div id="shinoy" ></div></a>
 <div id="top-icons"><ul>
