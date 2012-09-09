@@ -324,18 +324,18 @@ ul#menu_icons {
 ul#menu_icons li{
     list-style: none;
 }
-ul#menu_icons div{
+ul#menu_icons a{
     float: left;
     height: 30px;
     width: 30px;
     background: url('../images/csg-4fcf427bae163.png') no-repeat 50% 0;
 }
 
-ul#menu_icons div#facebook{ background-position: 50% 0px; } 
-ul#menu_icons div#twiter{ background-position: 50% -64px;  } 
-ul#menu_icons div#rss{ background-position: 50% -33px;  } 
-ul#menu_icons div#youtube{ background-position: 50% -96px;  } 
-ul#menu_icons div#likeabee_logo {
+ul#menu_icons a#facebook{ background-position: 50% 0px; } 
+ul#menu_icons a#twiter{ background-position: 50% -64px;  } 
+ul#menu_icons a#rss{ background-position: 50% -33px;  } 
+ul#menu_icons a#youtube{ background-position: 50% -96px;  } 
+ul#menu_icons a#likeabee_logo {
     float: left;
     height: 30px;
     width: 60px;
