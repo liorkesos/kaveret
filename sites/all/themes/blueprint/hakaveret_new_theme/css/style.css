@@ -48,28 +48,32 @@ a {
 }
 /*-------------- heder ------------------- */
 
-/* block-menu-primary-links */
+/* hakaveret-links-list */
+#block-menu-primary-links{
+width: 100px;
+}
 
-#block-menu-primary-links .content {
+
+.hakaveret-links-list .content {
   margin: 11px 0 0;
 }
 /* first level menu */
-#block-menu-primary-links li {
+.hakaveret-links-list li {
   float: left;
   background: url("../images/primary-links-with-down-arrow.gif") no-repeat 50% 21px #f9ab17;
   height: 30px;
   font-size: 12px;
   position: relative;
 }
-#block-menu-primary-links li.first {
+.hakaveret-links-list li.first {
  margin-right: 6px;
 }
 /*rest for second level li*/
 
-#block-menu-primary-links li li.first {
+.hakaveret-links-list li li.first {
  margin-right: 0;
 }
-#block-menu-primary-links li a {
+.hakaveret-links-list li a {
  color: #fff;
  width: 74px;
  text-align: center;
@@ -79,22 +83,22 @@ a {
 /* scound level menu */
 
 
-#block-menu-primary-links ul.menu li ul {
+.hakaveret-links-list ul.menu li ul {
     margin: 6px 0 0;   
     display: none;
     position: absolute; 
     z-index: 100;
 }
-#block-menu-primary-links ul.menu li:hover ul {
+.hakaveret-links-list ul.menu li:hover ul {
   display: block;
 }
-#block-menu-primary-links li li {
+.hakaveret-links-list li li {
  float: none;
  padding: 0;
  margin: 0;
  background-image: none;
 }
-#block-menu-primary-links li li a {
+.hakaveret-links-list li li a {
    border-top: 1px solid;
    display: inline-block;
    width: 80px;
@@ -102,12 +106,14 @@ a {
     text-decoration: none;
 
 }
-#block-menu-primary-links li.last {
+.hakaveret-links-list li.last {
     box-shadow: 0 0 2px;
 }
-#block-nemu-primary-links li li.last {
+.hakaveret-links-list li li.last {
   box-shadow: 0;
 }
+
+
 
 /*----------- Top menu ---------------- */
 
