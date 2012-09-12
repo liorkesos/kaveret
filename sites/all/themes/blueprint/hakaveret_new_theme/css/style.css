@@ -371,7 +371,7 @@ ul#main_four_menu div {
         );
 */
 	/* IE6-IE9 */
-	  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#7FFF0000,endColorstr=#7FFF0000
+	  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=0,endColorstr=#FFFFFF
 	);
 
            -webkit-background-size: 100% 7%;
