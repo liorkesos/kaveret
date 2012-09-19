@@ -51,6 +51,7 @@ a {
 /* hakaveret-links-list */
 #block-menu-primary-links{
 width: 100px;
+width: 375px;
 }
 
 
@@ -175,7 +176,7 @@ ul.nice-menu li ,ul.nice-menu li li , ul.nice-menu-down li.menuparent , ul.nice-
 
 /*------------ search ------------------*/
 .block-search form {
-  padding: 0 36px 0 0;
+  padding: 0 16px 0 0;
 }
  /*------ hide the 'search this site' and the site button  ------*/
 #search-block-form  label , #search-block-form .form-submit {
@@ -183,14 +184,11 @@ ul.nice-menu li ,ul.nice-menu li li , ul.nice-menu-down li.menuparent , ul.nice-
 }
 
 #search-block-form  input {
-  -webkit-border-radius: 15px;
-  -moz-border-radius: 15px;
-  border-radius: 15px;
-  background: url("../images/search_magnifying_glass.gif") no-repeat 9px 50%;
-  border: 1px solid #989696;
-  width: 210px;
-  height: 23px;
-  padding: 0 10px;
+background: url(/sites/all/themes/blueprint/hakaveret_new_theme/images/search_magnifying_glass.gif) no-repeat 9px 50%;
+border: 2px solid #AFAFAF;
+width: 253px;
+height: 26px;
+padding: 0 7px;
 }
 #search-block-form div.form-item {
     margin-bottom: 0em;
@@ -215,7 +213,7 @@ ul.nice-menu li ,ul.nice-menu li li , ul.nice-menu-down li.menuparent , ul.nice-
   height: 520px;
 }
 
-#site_full_width .block-quicktabs.even {
+#site_full_width .block-quicktabs .odd {
     background: #fcf0d8;
 }
 
@@ -274,12 +272,11 @@ ul.nice-menu li ,ul.nice-menu li li , ul.nice-menu-down li.menuparent , ul.nice-
 }
 
 /********* Front Page boxs staf **********/
-
+/*
 #site_full_width .views-field-phpcode {
   height: 54px;
   padding: 5px 7px;
-  
-}
+}*/
  
 
 #site_full_width #content-content {
@@ -350,13 +347,13 @@ ul#menu_icons a#likeabee_logo {
 }
 
 
-ul#main_four_menu div {
-	 /* webkit example */
+/*ul#main_four_menu div {
+	 /* webkit example * /
         background-image: -webkit-gradient(
           linear, right top, left top, from(rgba(255, 255, 255, 1.0)),
           to(rgba(255, 255, 255, 0))
         );
-        /* mozilla example - FF3.6+ */
+        /* mozilla example - FF3.6+ * /
         background-image: -moz-linear-gradient(
           right center,
           rgba(255, 255, 255, 1.0) 5%, rgba(255, 255, 255, 0) 95%
@@ -374,7 +371,7 @@ ul#main_four_menu div {
 	/* IE6-IE9 * /
 	  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=0,endColorstr=#FFFFFF
 	);
-	*/
+	* /
            -webkit-background-size: 100% 7%;
            -moz-background-size: 100% 7%;
            background-size: 100% 7%;
@@ -387,16 +384,15 @@ ul#main_four_menu div {
            -ms-transition: all .7s linear;
            transition: all .7s linear;  
 
-
-}
-ul#main_four_menu div:hover {
+}*/
+/*ul#main_four_menu div:hover {
      background-position: -100% -102%;
-}
+}*/
 
 ul#main_four_menu li  a {
     display: inline-block;
-    font-size: 14px;
-    font-weight: bold;
+    font-size: 13px;
+    /*font-weight: bold;*/
     padding: 75px 0 0;
     text-align: center;
     width: 100%;
@@ -671,3 +667,43 @@ ul.primary {
 body.page-node.og-context {
   background: url('../images/gradint.png') repeat-x 0 76px;
 }
+
+
+/*********************************************************************/
+/*************************  Learning Center **************************/
+/*********************************************************************/
+
+/*
+.box_Learning_Center{
+	width: 215px;
+	height: 373px;
+	border-radius: 6px;
+	border: 3px solid #EBEBBD;
+}
+.Author
+{
+	float: left;
+
+}
+.content
+{
+	position: relative;
+	right: 17px;
+	top: 10px;
+	width: 186px;
+}
+
+*/
+
+/************************   Devel  ***********************************/
+.ui-draggable{
+opacity: 0.5;
+display: block;
+z-index: -100;
+position: absolute;
+top: 13px;
+right: 215px;
+}
+
+/********************************************************************/
+
