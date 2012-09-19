@@ -44,7 +44,8 @@ a {
 }
 
 /*-------------- Site Width ------------------- */
-.container {
+div.container {
+margin: 0.5em auto;
 }
 /*-------------- heder ------------------- */
 
@@ -213,7 +214,7 @@ padding: 0 7px;
   height: 520px;
 }
 
-#site_full_width .block-quicktabs .odd {
+#site_full_width .block-quicktabs.odd {
     background: #fcf0d8;
 }
 
@@ -304,12 +305,17 @@ th, td, caption {
 }
 
 /*------------ main manu - icons on the right side ------------------*/
+#block-block-23{
+	width: 256px;
+}
+
 ul#main_four_menu {
 	
 }
 
 ul#main_four_menu li {
-    float: left;
+   margin-left: 10px;
+float: right;
     height: 95px;
     width: 95px;
     list-style: none;
@@ -323,6 +329,7 @@ ul#main_four_menu li#resource_exchange{ background-position: 50% -241px;  }
 
 ul#menu_icons {
 	margin-top: 209px;
+margin-left: 4px;
 }
 ul#menu_icons li{
     list-style: none;
@@ -392,7 +399,7 @@ ul#menu_icons a#likeabee_logo {
 ul#main_four_menu li  a {
     display: inline-block;
     font-size: 13px;
-    /*font-weight: bold;*/
+    font-weight: bold;
     padding: 75px 0 0;
     text-align: center;
     width: 100%;
@@ -430,6 +437,13 @@ ul#shering {
    float: right;
    width: 61px;
 }
+
+
+.block-block-25 img
+{
+margin-right: 25px;
+}
+
 /*********************************************************************/
 /*************************  Fotter ***********************************/
 /*********************************************************************/
@@ -440,14 +454,14 @@ ul#shering {
 #footer-dot {
     border-top: 1px dashed #FFFFFF;
     display: inline-block;
-    margin: 5px 0 0;
+    margin: 4px 0 0;
     width: 100%;
 }
 
 
 #footer li{
     list-style: none;
-    
+    font-size: 13px;
 }
 #small-icons li {
     background: url('../images/csg-4fd078facf347.png') no-repeat top left;
