@@ -214,7 +214,10 @@ padding: 0 7px;
   height: 520px;
 }
 
-#site_full_width .block-quicktabs.odd {
+
+/*#site_full_width .block-quicktabs.odd*/ 
+#block-quicktabs-about_us,#block-quicktabs-groups
+{
     background: #fcf0d8;
 }
 
@@ -439,8 +442,12 @@ ul#shering {
 }
 
 
-.block-block-25 img
+#block-block-25 img
 {
+width:722;
+height:267;
+float: right;
+margin: -2em 0 0.5em 1.5em;
 margin-right: 25px;
 }
 
