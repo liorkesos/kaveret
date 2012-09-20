@@ -45,17 +45,17 @@ a {
 
 /*-------------- Site Width ------------------- */
 div.container {
-margin: 0.5em auto;
+	margin: 0.5em auto;
 }
 /*-------------- heder ------------------- */
 
 /* hakaveret-links-list */
 #block-menu-primary-links{
-width: 100px;
-width: 375px;
+	width: 375px;
 }
-
-
+#block-menu-menu-authenticated-user,#block-menu-menu-anonymous-user{
+	margin-left: 5px;
+}
 .hakaveret-links-list .content {
   margin: 11px 0 0;
 }
@@ -310,6 +310,7 @@ th, td, caption {
 /*------------ main manu - icons on the right side ------------------*/
 #block-block-23{
 	width: 256px;
+margin-top: -18px;
 }
 
 ul#main_four_menu {
@@ -317,8 +318,9 @@ ul#main_four_menu {
 }
 
 ul#main_four_menu li {
-   margin-left: 10px;
-float: right;
+    margin-left: 10px;
+    margin-top: 8px;
+    float: right;
     height: 95px;
     width: 95px;
     list-style: none;
@@ -331,8 +333,9 @@ ul#main_four_menu li#education_center{ background-position: 50% -155px;  }
 ul#main_four_menu li#resource_exchange{ background-position: 50% -241px;  } 
 
 ul#menu_icons {
-	margin-top: 209px;
-margin-left: 4px;
+	width: 198px;
+	margin-top: 226px;
+	margin-left: 1px;
 }
 ul#menu_icons li{
     list-style: none;
@@ -349,6 +352,7 @@ ul#menu_icons a#twiter{ background-position: 50% -64px;  }
 ul#menu_icons a#rss{ background-position: 50% -33px;  } 
 ul#menu_icons a#youtube{ background-position: 50% -96px;  } 
 ul#menu_icons a#likeabee_logo {
+    margin-left: 7px;
     float: left;
     height: 30px;
     width: 60px;
@@ -399,11 +403,11 @@ ul#menu_icons a#likeabee_logo {
      background-position: -100% -102%;
 }*/
 
-ul#main_four_menu li  a {
+ul#main_four_menu li a {
     display: inline-block;
     font-size: 13px;
     font-weight: bold;
-    padding: 75px 0 0;
+    padding: 81px 0 0;
     text-align: center;
     width: 100%;
     -webkit-transition: color 0.5s ease-in;
