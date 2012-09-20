@@ -416,7 +416,40 @@ ul#main_four_menu li a {
     -ms-transition:color 0.5s ease-in;
     transition: color 0.5s ease-in;
 }
-
+/*//////////////*/
+#block-menu-menu-menu-tags ul li
+{ 
+  background-color:#f0ac00;
+  width: 220px;
+  height: 48px;
+  z-index: 23;
+  margin-bottom: 10px;
+border-top-left-radius: 35px;
+border-bottom-left-radius: 35px;
+  float: left;
+  list-style: none;
+  text-align: center;
+ }
+#block-menu-menu-menu-tags ul li
+{ 
+    background-image: url(/sites/all/themes/blueprint/hakaveret_new_theme/images/big-icons.png);
+    background-repeat: no-repeat;
+    background-size: 46px;
+    background-position: -2px 2px;
+}
+#block-menu-menu-menu-tags a
+{ 
+  display: inline-block;
+  padding-top: 15px;
+  color: white;
+  font-size: small;
+  
+  font-weight: bolder;
+ }
+#block-menu-menu-menu-tags li:nth-child(1) { background-position: 2px -191px; } 
+#block-menu-menu-menu-tags li:nth-child(2) { background-position: 3px 2px;  } 
+#block-menu-menu-menu-tags li:nth-child(3) { background-position: 2px -127px;  } 
+#block-menu-menu-menu-tags li:nth-child(4) { background-position: 3px -63px;  } 
 
 
 /*------------ under main manu - icons  ------------------*/
@@ -697,28 +730,55 @@ body.page-node.og-context {
 /*********************************************************************/
 /*************************  Learning Center **************************/
 /*********************************************************************/
+#block-menu-menu-learning-center{
+position: absolute;
+top: 230px;
+left: 440px;
+}
+#block-menu-menu-learning-center h3{
+	color: #04447E;
+}
+#block-quicktabs-new_articles{
+	width: 727px;
+}
+#block-quicktabs-new_articles h3{
+	color: #04447E;
+	margin-bottom: -20px;
+}
+#quicktabs-new_articles li {
+float: left;
+list-style: none;
+}
+#block-quicktabs-new_articles ul.quicktabs_tabs li{
+  font-size: 14px;
+    color: #B01919;
+    padding: 0 25px 14px 0;
 
-/*
-.box_Learning_Center{
+}
+#block-quicktabs-new_articles ul.quicktabs_tabs li.qtab-3{
+	position: relative;
+	top: 420px;
+	left: -400px;
+}
+#quicktabs_container_new_articles{
+	width: 900px;
+	clear: both;
+}
+#block-quicktabs-new_articles .views-row{
+	float: right;
+	margin-left: 24px;
 	width: 215px;
 	height: 373px;
 	border-radius: 6px;
 	border: 3px solid #EBEBBD;
 }
-.Author
-{
-	float: left;
-
-}
-.content
+#block-quicktabs-new_articles .views-row.views-field-body
 {
 	position: relative;
 	right: 17px;
 	top: 10px;
 	width: 186px;
 }
-
-*/
 
 /************************   Devel  ***********************************/
 .ui-draggable{
