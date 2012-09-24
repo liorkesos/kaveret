@@ -73,7 +73,12 @@ div.container {
 /*rest for second level li*/
 
 .hakaveret-links-list li li.first {
+margin-top: 6px;
  margin-right: 0;
+}
+
+.hakaveret-links-list li li.last {
+margin-bottom: 15px;
 }
 .hakaveret-links-list li a {
  color: #fff;
@@ -94,14 +99,13 @@ div.container {
   display: block;
 }
 .hakaveret-links-list li li {
- float: none;
- padding: 0;
- margin: 0;
- background-image: none;
- background:white;
- height: 20px;
- width: 90px;
-
+float: none;
+margin: 0;
+background-image: none;
+background: white;
+height: 20px;
+margin-bottom: 0px;
+width: 100px;
 }
 .hakaveret-links-list li li a {
     display: inline-block;
@@ -110,10 +114,10 @@ div.container {
     padding: 6px 0 0;
     text-decoration: none;
     color:#5a6b98;
-    font-weight: bolder;
+   font-weight: normal;
     text-align: right;
-    padding-right: 15px;
-    font-size: 80%;
+    padding-right: 12px;
+    font-size: 13px;
 }
 .hakaveret-links-list li.first {
     box-shadow: 0 0 2px;
@@ -209,7 +213,7 @@ padding: 0 7px;
 width: 100%;
 clear: both;
 }
-#block-menu-menu-header ,#block-menu-menu-header a
+#block-menu-menu-sub-header ,#block-menu-menu-sub-header a
 {
 border: 1px #FAD07C solid;
 border-top: 0px;
@@ -226,34 +230,51 @@ background: -moz-linear-gradient(top, rgba(253,246,230,1) 0%, rgba(255,255,255,1
  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdf6e6', endColorstr='#fdf6e6',GradientType=0 );
  /* IE6-9 */
 }
-#block-menu-menu-header
+#block-menu-menu-sub-header
 {
 height: 100%;
 margin: 0px auto;
 width: 950px;
 }
-#block-menu-menu-header h3
+#block-menu-menu-sub-header h3
 {
 display: none;
 }
 
-#block-menu-menu-header ul
+#block-menu-menu-sub-header ul
 {
   height: 61px;
 }
-#block-menu-menu-header ul li
+#block-menu-menu-sub-header ul li
 {
 margin-left: -4px;
 float: left;
 }
-#block-menu-menu-header a
+#block-menu-menu-sub-header a
 {
 position: relative;
 top: 19px;
 padding: 21px;
 color: #024883;
 }
-
+#block-menu-menu-sub-header ul.menu li ul {
+margin: 38px 3px 0;
+display: none;
+position: absolute;
+z-index: 100;
+}
+#block-menu-menu-sub-header ul.menu li:hover ul {
+  display: block;
+}
+#block-menu-menu-sub-header li li {
+float: none;
+margin: 0;
+background-image: none;
+background: white;
+height: 20px;
+margin-bottom: 0px;
+width: 100px;
+}
 
 
 /*********************************************************************/
@@ -490,7 +511,7 @@ border-bottom-left-radius: 35px;
   float: left;
   list-style: none;
   text-align: center;
-  box-shadow: 0px 0px 8px #555353;
+  box-shadow: 0px 0px 7px  #555353;
  }
 
 /*------------  menu tags - icons on the right side  whithout homepage------------------*/
@@ -549,17 +570,17 @@ background-image: none;
 border-top-left-radius: 0px;
 border-bottom-left-radius: 0px;
 background: white;
-width: 164px;
-height: 20px;
+width: 115px;
 text-align: right;
-padding-right: 32px;
+padding-right: 16px;
+box-shadow: 0px 0px 2px 1.5px #C5BFAF;
+border-radius: 2px;
 }
 #block-menu-menu-menu-tags li li  a {
-   /*display: inline-block;*/ 
-  padding: 6px 0 0;
-  text-decoration: none;
-  color: black; 
-  font-weight: normal;
+padding-top: 12px;
+padding-bottom: 12px;
+text-decoration: none;
+color: #888;
 }
 /*------------ under main manu - icons  ------------------*/
 
@@ -845,14 +866,14 @@ top: 230px;
 left: 440px;
 }
 #block-menu-menu-learning-center h3{
-background: url(/sites/all/themes/blueprint/hakaveret_new_theme/images/LernningCenter_icons.png) no-repeat 20% 0px;
-padding-right: 24px;
+background: url(/sites/all/themes/blueprint/hakaveret_new_theme/images/lernningCenter_icons.png) no-repeat 241% 1%;
+padding-right: 25px;
 	color: #024883;
 margin-bottom: 9px;
 }
 
 #block-menu-menu-learning-center li a{
-background: url(/sites/all/themes/blueprint/hakaveret_new_theme/images/LernningCenter_icons.png) no-repeat 116% -15px;
+background: url(/sites/all/themes/blueprint/hakaveret_new_theme/images/lernningCenter_icons.png) no-repeat 116% -15px;
 padding-right: 16px;
 }
 #block-menu-menu-learning-center li a:nth-child(1) { background-position: 50% 18px; } 
@@ -896,7 +917,7 @@ margin-bottom: 9px;
 	position: relative;
 	top: 424px;
 	left: -283px;
-	 background: url('../images/big-icons.png') no-repeat 50% 0 white;
+	 background: url(/sites/all/themes/blueprint/hakaveret_new_theme/images/lernningCenter_icons.png) no-repeat 50% 0 white;
 }
 #quicktabs_container_new_articles{
 	width: 900px;
