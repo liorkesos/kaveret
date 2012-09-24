@@ -83,13 +83,12 @@ div.container {
   display: inline-block;
 }
 /* scound level menu */
-
-
 .hakaveret-links-list ul.menu li ul {
     margin: 6px 0 0;   
     display: none;
     position: absolute; 
     z-index: 100;
+	box-shadow: 0px 0px 13px -1px #C5B88E;
 }
 .hakaveret-links-list ul.menu li:hover ul {
   display: block;
@@ -99,21 +98,28 @@ div.container {
  padding: 0;
  margin: 0;
  background-image: none;
-}
-.hakaveret-links-list li li a {
-   border-top: 1px solid;
-   display: inline-block;
-   width: 80px;
-   padding: 6px 0 0;
-    text-decoration: none;
-color: #024883;
+ background:white;
+ height: 20px;
+ width: 90px;
 
 }
-.hakaveret-links-list li.last {
+.hakaveret-links-list li li a {
+    display: inline-block;
+    width: 80px;
+    border: 0px;
+    padding: 6px 0 0;
+    text-decoration: none;
+    color:#5a6b98;
+    font-weight: bolder;
+    text-align: right;
+    padding-right: 15px;
+    font-size: 80%;
+}
+.hakaveret-links-list li.first {
     box-shadow: 0 0 2px;
 }
-.hakaveret-links-list li li.last {
-  box-shadow: 0;
+.hakaveret-links-list li li.first {
+box-shadow: 0px 0px;
 }
 
 
@@ -486,11 +492,29 @@ border-bottom-left-radius: 35px;
   text-align: center;
   box-shadow: 0px 0px 8px #555353;
  }
+
+/*------------  menu tags - icons on the right side  whithout homepage------------------*/
 #block-menu-menu-menu-tags ul li
+{ 
+  background-color:f0ac00;
+  width: 129px;
+  height: 44px;
+  z-index: 23;
+  margin-bottom: 10px;
+  border-top-left-radius: 26px;
+  border-bottom-left-radius: 26px;
+  float: left;
+  list-style: none;
+  text-align: left;
+ /*text-align: center;*/
+ box-shadow: 0px 0px 8px #555353;
+ /**/padding-left: 59px;
+ }
+ #block-menu-menu-menu-tags ul li
 { 
     background-image: url(/sites/all/themes/blueprint/hakaveret_new_theme/images/big-icons.png);
     background-repeat: no-repeat;
-    background-size: 46px;
+    background-size: 42px;
     background-position: -2px 2px;
 }
 #block-menu-menu-menu-tags a
@@ -498,16 +522,45 @@ border-bottom-left-radius: 35px;
   display: inline-block;
   padding-top: 15px;
   color: white;
-  font-size: small;
-  
+  font-size: small; 
   font-weight: bolder;
  }
-#block-menu-menu-menu-tags li:nth-child(1) { background-position: 2px -191px; } 
-#block-menu-menu-menu-tags li:nth-child(2) { background-position: 3px 2px;  } 
-#block-menu-menu-menu-tags li:nth-child(3) { background-position: 2px -127px;  } 
-#block-menu-menu-menu-tags li:nth-child(4) { background-position: 3px -63px;  } 
+#block-menu-menu-menu-tags li:nth-child(1) { background-position: 1% 101%; } 
+#block-menu-menu-menu-tags li:nth-child(2) { background-position:1% 33.5%;  } 
+#block-menu-menu-menu-tags li:nth-child(3) { background-position: 1% 67%;  } 
+#block-menu-menu-menu-tags li:nth-child(4) { background-position: 2% -1%;  }
 
+#block-menu-menu-menu-tags ul.menu li ul {
+    margin: 6px 0 0;   
+    display: none;
+    position: absolute; 
+    z-index: 100;
 
+    
+}
+#block-menu-menu-menu-tags ul.menu li:hover ul {
+  display: block;
+}
+#block-menu-menu-menu-tags li li {
+float: none;
+padding: 0;
+margin: 0;
+background-image: none;
+border-top-left-radius: 0px;
+border-bottom-left-radius: 0px;
+background: white;
+width: 164px;
+height: 20px;
+text-align: right;
+padding-right: 32px;
+}
+#block-menu-menu-menu-tags li li  a {
+   /*display: inline-block;*/ 
+  padding: 6px 0 0;
+  text-decoration: none;
+  color: black; 
+  font-weight: normal;
+}
 /*------------ under main manu - icons  ------------------*/
 
 ul#shering {
@@ -792,21 +845,46 @@ top: 230px;
 left: 440px;
 }
 #block-menu-menu-learning-center h3{
+background: url(/sites/all/themes/blueprint/hakaveret_new_theme/images/LernningCenter_icons.png) no-repeat 20% 0px;
+padding-right: 24px;
 	color: #024883;
+margin-bottom: 9px;
 }
+
+#block-menu-menu-learning-center li a{
+background: url(/sites/all/themes/blueprint/hakaveret_new_theme/images/LernningCenter_icons.png) no-repeat 116% -15px;
+padding-right: 16px;
+}
+#block-menu-menu-learning-center li a:nth-child(1) { background-position: 50% 18px; } 
+#block-menu-menu-learning-center li a:nth-child(2){ background-position: 50% -69px;  } 
+#block-menu-menu-learning-center li a:nth-child(3){ background-position: 50% -155px;  } 
+#block-menu-menu-learning-center li a:nth-child(4){ background-position: 50% -241px;  } 
+#block-menu-menu-learning-center li a:nth-child(5){ background-position: 50% -155px;  } 
+#block-menu-menu-learning-center li a:nth-child(6){ background-position: 50% -241px;  } 
+
 #block-quicktabs-new_articles{
-	width: 727px;
+height: 440px;
+border-bottom: 1px #FAD07C solid;
+}
+#block-quicktabs-new_articles,.view-learning-center-selected{
+	width: 708px;
 }
 #block-quicktabs-new_articles h3{
 	color: #024883;
 	margin-bottom: -20px;
 }
+#block-views-96798b78acdc9e39d155765148f7836b h3 {
+	color: #024883;
+	margin-bottom: 20px;
+}
 
-#quicktabs-new_articles li {
+#quicktabs-new_articles li ,.view-learning-center-selected li{
 float: left;
 list-style: none;
 }
-
+#block-quicktabs-new_articles ul.quicktabs_tabs li{
+margin-bottom: 9px;
+}
 
 #block-quicktabs-new_articles ul.quicktabs_tabs li a{
   font-size: 14px;
@@ -816,14 +894,15 @@ list-style: none;
 }
 #block-quicktabs-new_articles ul.quicktabs_tabs li.qtab-3{
 	position: relative;
-	top: 420px;
-	left: -400px;
+	top: 424px;
+	left: -283px;
+	 background: url('../images/big-icons.png') no-repeat 50% 0 white;
 }
 #quicktabs_container_new_articles{
 	width: 900px;
 	clear: both;
 }
-#block-quicktabs-new_articles .views-row{
+#block-quicktabs-new_articles .views-row, .view-learning-center-selected .views-row{
 	float: right;
 	margin-left: 24px;
 	width: 215px;
@@ -832,7 +911,10 @@ list-style: none;
 	border: 2px solid #FBD38B;
 	box-shadow: 0px 0px 0px 3px #FAE8C7;
 }
-#block-quicktabs-new_articles .views-field-body
+#block-quicktabs-new_articles .views-row-last,.view-learning-center-selected .views-row-last{
+margin-left: 0px;
+}
+#block-quicktabs-new_articles .views-field-body, .view-learning-center-selected .views-field-body
 {
 	position: relative;
 	right: 17px;
