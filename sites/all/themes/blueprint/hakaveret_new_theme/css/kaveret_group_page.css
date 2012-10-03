@@ -1,0 +1,97 @@
+/*-----------------------------
+* for groups page
+*/
+/* somehow two-columns page layout uses only 710 of 910 px*/
+body.page-node.node-type-group.two-sidebars .span-18 {
+	margin-left: 22px;
+    width: 725px;
+}
+/* fix for the margin on two-columns page layout */
+#kaveret_group_page .panel-col-first .panel-pane {
+  margin-right: 16px;
+}
+#kaveret_group_page .panel-col-last .panel-pane {
+   margin-left: 16px;
+}
+/*rounded corners */
+#kaveret_group_page .panel-pane { /*pane-views pane-group-block-events-latest glist-all span-9*/
+ border-color: #FCF0D8;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -khtml-border-radius: 6px;
+    border-radius: 6px;
+        border-style: solid;
+    border-width: 3px;
+    width: 345px;
+}
+/*no bullets on lists here */
+#kaveret_group_page .panel-pane ul li, 
+#kaveret_group_page .panel-pane ul.menu li, 
+#kaveret_group_page .panel-pane .item-list ul li, 
+#kaveret_group_page .panel-pane li.leaf {
+    list-style: none outside none;
+}
+/* inside the boxes - headers and rulers, margins, 'read more' link */
+#kaveret_group_page .panel-pane h2.pane-title {
+  background: url('../images/groups_block_heading_bg.png') repeat-x;
+   padding-bottom: 1px;
+    padding-top: 5px;
+}
+#kaveret_group_page .panel-pane div.pane-content {
+  padding-top: 10px;
+}
+#kaveret_group_page .panel-pane .pane-content .g-list-content.span-5,
+#kaveret_group_page .panel-pane .pane-content p {
+  margin: 0 0 1em;
+}
+#kaveret_group_page .panel-pane .pane-content hr {
+  background: url('../images/groups_block_hr_bg.png') repeat-x;
+  height: 2px;
+  margin-bottom: 0px;
+}
+/*#kaveret_group_page .panel-pane .g-list-inner {
+  padding-bottom: 0px;
+}*/
+#kaveret_group_page .panel-pane div.view-footer,
+#kaveret_group_page .panel-pane div.more-link {
+   margin-bottom: 10px;
+    margin-left: 12px; /* height: 20px;
+  margin-bottom: 10px;
+/*  margin-top: -15px;
+    padding-bottom: 0;
+    padding-top: 0;*/
+}
+#kaveret_group_page .panel-pane div.view-footer p {
+  height: 20px;
+  float: left;
+}
+/* user pics */
+#kaveret_group_page .glist-all table td {
+    padding: 5px;
+}
+/* user pic zoom magic */
+#kaveret_group_page .group-block-members-zoom-img {
+	position: relative;
+	width: 100px;
+    height: 100px;
+    top: 0px;
+    left: 0px;
+    border-left: medium solid;
+    border-right: medium solid;
+    border-top: medium solid;
+}
+#kaveret_group_page div.group-block-members-zoom-name {
+	position: relative;
+    top: 0px;
+    left: 0px;
+    background: white;
+    width: 100px;
+    z-index: 1;    
+    border-left: medium solid;
+    border-right: medium solid;
+    border-bottom: medium solid;
+}
+
+#kaveret_group_page div.group-block-members-zoom-img-with-caption {
+	position: absolute;
+}
