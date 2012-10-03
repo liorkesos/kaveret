@@ -1,0 +1,22 @@
+<?php
+/**
+ * @file
+ * Provides install, uninstall, enable, disable, and update functions.
+ *
+ * @author Baroch Oren
+ */
+
+
+/**
+ * Implements hook_install().
+ */
+function roles_within_group_install() {
+  // get OGUR group admin default role -  og_user_roles_default_admin_role
+  $default_role_id = variable_get('og_user_roles_default_admin_role', '8');
+  db_query("insert into {og_users_roles} (gid, uid, rid) "
+    ."SELECT ogu.nid as gid, ogu.uid as uid, '$default_role_id' as rid FROM {og_uid} ogu "
+    ."where ogu.is_admin=1 and ogu.is_active=1 and (nid, uid) not in "
+      ."( SELECT ogur.gid as gid, ogur.uid as uid FROM {og_users_roles} ogur)");
+/*SELECT ogu.nid as gid, ogu.uid as uid, '8' as rid FROM og_uid ogu where ogu.is_admin=1 and ogu.is_active=1 and (nid, uid) not in ( SELECT ogur.gid as gid, ogur.uid as uid FROM og_users_roles ogur);*/
+}
+
