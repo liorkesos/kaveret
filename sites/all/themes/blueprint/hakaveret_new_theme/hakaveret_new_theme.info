@@ -19,6 +19,7 @@ screenshot = screenshot.png
   ; an /extremely/ useful feature. See the excellent Drupal 6 Theme Guide at
   ; http://drupal.org/node/171209 for more details.
 stylesheets[screen,projection][]   = css/style.css
+stylesheets[screen,projection][]   = css/kaveret_group_page.css
 
   ; To prevent stylesheets of a base theme or of a module from being included in
   ; our sub-theme, we specify it in our .info file (and we don't need to have a
@@ -27,7 +28,7 @@ stylesheets[screen,projection][]   = css/style.css
   ; stylesheets[all][]   = blueprint.css
 
   ; Optionally add some jquery scripts to your theme.
-scripts[] = script.js
+scripts[] = js/script.js
 
   ; These regions defined in Blueprint's default page.tpl.php file.  The name in
   ; brackets is the name of the variable in the page.tpl.php file, (e.g.

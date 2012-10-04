@@ -1,0 +1,3 @@
+<?php
+
+include_once('kaveret_group_page.features.inc');
