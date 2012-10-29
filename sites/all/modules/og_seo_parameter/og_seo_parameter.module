@@ -544,10 +544,13 @@ function og_seo_parameter_url_outbound_alter(&$path, &$options, $original_path, 
     if ((arg(0) == 'node') && (is_numeric(arg(1)))) {
   	  $nid = arg(1);
     } 
-
+    
+    // on non-node paths, no seo parameter is needed.
+    
     // BEWARE OF GROUPS THAT ARE HIDDEN FOR NOT-LOGGED IN USERS 
     // - LOGIC ASSUMES PUBLICLY VISIBLE GROUP
-    $should_add_seo_parameter = is_group_context($nid, KAVERET_HESCHEL_NODE);
+    $should_add_seo_parameter = isset($nid) 
+                                   && is_group_context($nid, KAVERET_HESCHEL_NODE);
   
     if ($should_add_seo_parameter) {
   	  $options['query'] = (($options['query']) ? "&" : "")
