@@ -18,3 +18,22 @@ body {
 .og-subgroups-tree ul {
     margin:0;
 }
+
+/* no need for casetracker on node 353 - we're using context reaction block */
+#node-353 {
+  display: none;
+  visibility: hidden;
+}
+/* hide dup news and subgroups - caused by a bug on context's conditions configuration */
+.col-right div#block-views-group_block_news-block_3.count-15 {
+  display: none;
+  visibility: hidden;
+}
+
+.col-right div#block-og_subgroups-hierarchy.count-17 {
+  display: none;
+  visibility: hidden;
+}
+
+
+
