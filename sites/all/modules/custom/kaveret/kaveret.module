@@ -1,0 +1,22 @@
+<?php
+
+function kaveret_permission() {
+  return array(
+    'administer Kavert' => array(
+      'title' => t('Administer kaveret info'), 
+      'description' => t('Perform administration tasks for my kaveret.'),
+    ),
+  );
+}
+
+function kaveret_form_alter(&$form, &$form_state, $form_id) {
+	if ($form_id == 'search_block_form'){
+//		$form['#attributes'] = array('placeholder' => t('search people groups and content'));
+ $form['#placeholder'] = t('search people groups and content');
+ 	 	dpm($form_id);
+		dpm('hahah');
+  	dpm($form);
+  }
+}
+
+?>

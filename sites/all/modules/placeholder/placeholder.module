@@ -1,0 +1,27 @@
+<?php
+
+/**
+ * Implemenation of hook_form_alter().
+ */
+function placeholder_form_alter(&$form, $form_state, $form_id) {
+  placeholder_process($form);
+}
+
+/**
+ * Set placeholder text as the default value for form elements that have
+ * specified #placeholder => 'foo' in its form builder function. Recursion
+ * is used to make sure elements within field groups are accounted for.
+ */
+function placeholder_process(&$form_elements) {
+  $form_items = element_children($form_elements);
+  foreach ($form_items as $key => $val) {
+    $item = &$form_elements[$val];
+    if ($item['#type'] == 'textfield' && empty($item['#default_value']) && !empty($item['#placeholder'])) {
+      drupal_add_js(drupal_get_path('module', 'placeholder') . '/placeholder.js');
+      $item['#default_value'] = $form_elements[$val]['#placeholder'];
+      $item['#attributes']['class'] = isset($item['#attributes']['class']) ? $item['#attributes']['class'] . ' placeholder' : 'placeholder'; 
+    }
+    // Check if this item has children and check them accordingly.
+    placeholder_process($item);
+  }
+}

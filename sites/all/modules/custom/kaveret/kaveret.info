@@ -1,0 +1,11 @@
+; $Id: purl.info,v 1.1.2.3 2009/11/20 16:02:43 jmiccolis Exp $
+name = Kaveret modifications
+description = "Kaveret fixes"
+core = 6.x
+
+; Information added by drupal.org packaging script on 2010-08-10
+version = "6.x-1.0-beta13"
+core = "6.x"
+project = "kaveret"
+datestamp = "1281477392"
+

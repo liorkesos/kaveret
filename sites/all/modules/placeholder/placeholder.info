@@ -1,0 +1,10 @@
+name = Placeholder
+description = Adds a FAPI property to allow for "placeholder" text to appear in a textfield element.
+core = 6.x
+
+; Information added by drupal.org packaging script on 2011-03-05
+version = "6.x-1.0"
+core = "6.x"
+project = "placeholder"
+datestamp = "1299355868"
+
