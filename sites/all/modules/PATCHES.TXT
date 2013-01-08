@@ -1,0 +1,4 @@
+maxlength
+Issue: http://drupal.org/node/314508
+Patch: http://drupal.org/node/314508#comment-3951734
+Remark: submodule installed, patch was not applied (not needed here)

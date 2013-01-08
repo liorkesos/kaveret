@@ -1,0 +1,46 @@
+<?php
+
+/*
+*    Implements maxlenght support for wysiwyg editor TinyMCE
+*    author: ayalon GmbH, www.ayalon.ch
+**/
+
+function wysiwyg_maxlength_help($path, $arg) {
+  if ($path == 'admin/modules#description') {
+    return t('Enables maxlength implementation in TinyMCE and CKEDITOR editor for Wysiwyg module.');
+  }
+}
+
+/* Implementation of hook_wysiwyg_plugin(). 
+ */
+function wysiwyg_maxlength_wysiwyg_plugin($editor) {
+  $path = drupal_get_path('module', 'wysiwyg_maxlength');
+  switch ($editor) {
+    case 'tinymce':
+			// Load our invocation scripts.
+      //drupal_add_js($path . '/editor_plugin.js');
+      return array(
+        'maxlength' => array(
+				  'type' => 'external',
+          'title' => t('Maxlength compatibility'),
+          'description' => t('Enables maxlength implementation in TinyMCE editor for Wysiwyg module.'),
+          'extensions' => array('maxlength' => t('Maxlength compatibility')),
+          'path' => $path .'/editor_plugin.js',
+          'load' => TRUE,
+        ),
+      );
+    case 'ckeditor':
+      return array(
+        'maxlength' => array(
+          'type' => 'external',
+          'title' => t('Maxlength compatibility'),
+          'description' => t('Enables maxlength implementation in CKEDITOR editor for Wysiwyg module.'),
+          'extensions' => array('maxlength' => t('Maxlength compatibility')),
+          'path' => $path .'/ckeditor_plugin.js',
+          'load' => TRUE,
+        ),
+      );
+  }
+}
+
+?>

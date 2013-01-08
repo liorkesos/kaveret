@@ -1,0 +1,6 @@
+; $Id$
+name = WYSIWIG maxlength 
+description = Adds the maxlength plugin editor for TinyMCE
+package = ayalon
+
+core = 6.x

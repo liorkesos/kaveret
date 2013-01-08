@@ -960,8 +960,17 @@ right: 215px;
   display: none; 
   visibility: hidden;
 }
+
 /********************************************************************/
 /************************* re Captcha *******************************/
 #recaptcha_area {
  direction: ltr;
 }
+/********************************************************************/
+/************************* #19011 - fixes for greennet's infocenter **/
+.og-context-450 .submitted,
+.og-context-450 .field-field-created-date,
+.faceted-search-env-yeruka .submitted,
+.faceted-search-env-yeruka .field-field-created-date {
+  display: none !important;
+} 
